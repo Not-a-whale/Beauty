@@ -1,0 +1,122 @@
+/* Main styles for the whole project */
+
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+body {
+    color: var(--color-text);
+    background: var(--color-page-bg);
+}
+
+main {
+    display: block;
+    background-color: #ffffff
+}
+
+p,ul,ol {
+    margin: 0;
+    padding: 0
+}
+
+p {
+    font-family: var(--font--paragraph--family);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+h1,h2,h3,h4,h5 {
+    margin-top: 0
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+    font-family: var(--font--paragraph--family);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+a {
+    font-family: var(--font--accent--family);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text);
+    font-weight: normal;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+ul {
+    list-style: none
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.innerdoc_wrapper ul {
+
+}
+
+.innerdoc_wrapper li {
+
+}
+
+span {
+
+}
+
+label {
+
+}
+
+img {
+
+}
+
+.innerdoc_wrapper img {
+
+}
+
+.innerdoc_wrapper {
+    
+}
+
+button.medium-button {
+    width: 52px;
+    height: 46px;
+    background-color: var(--color-text);
+    color: var(--color--alternative);
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}

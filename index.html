@@ -22,14 +22,296 @@
     <link rel="stylesheet" href="./assets/css/en/elements/global.css">
     <link rel="stylesheet" href="./assets/css/en/elements/footer.css">
     <link rel="stylesheet" href="./assets/css/en/elements/header.css">
+    <link rel="stylesheet" href="./assets/css/en/elements/helper-classes.css">
     <script src="./assets/js/main.js" defer></script>
     <script src="./assets/js/shared/bootstrap.bundle.js" defer></script>
-    <script src="./assets/js/shared/bootstrap.esm.js" defer></script>
     <script src="./assets/js/shared/bootstrap.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/en/pages/main-page.css">
 </head>
 
 <body>
-    <p>pisya</p>
+    <main class="main__content">
+        <section class="announcement">
+            <div class="announcement__wrapper">
+                <div class="announcement__icon">
+                    <img src="./assets/img/sun-icon_50x50.png" alt="announcement icon">
+                </div>
+                <div class="announcement__text">
+                    50% OFF all skincare this weekend - Enter code SKNWKND
+                </div>
+            </div>
+        </section>
+        <header class="header__root">
+            <div class="header__top">
+                <div class="header__left">
+                    <div class="disclosure">
+                        <div class="disclosure__block">
+                            <span class="disclosure__option--current">USD $</span>
+                            <img src="./assets/img/arrow_down.svg" alt="arrow down">
+                        </div>
+                        <ul class="disclosure__list">
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    AUD $
+                                </span>
+                            </li>
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    CAD $
+                                </span>
+                            </li>
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    EUR €
+                                </span>
+                            </li>
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    USD $
+                                </span>
+                            </li>
+                        </ul>
+                        <input type="text" class="disclosure__input">
+                    </div>
+                    <div class="search-bar">
+                        <img src="./assets/img/search_icon.svg" alt="search image" class="search-bar__img">
+                    </div>
+                </div>
+                <div class="header__center">
+                    <h1 class="header__logo">
+                        <a href="/" role="banner" title="Blockshop theme - Beauty">
+                            <img src="./assets/img/main_logo.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="header__right">
+                    <div class="flag">
+                        <div class="flag__options">
+                            <div class="flag__option">
+                                <img src="./assets/img/UAE_flag.png" alt="UAE flag">
+                                <p>UAE</p>
+                            </div>
+                        </div>
+                        <ul class="flag__list">
+                            <li class="flag__list-item">
+                                <span class="flag__list-option">
+                                    UAE
+                                </span>
+                            </li>
+                            <li class="flag__list-item">
+                                <span class="flag__list-option">
+                                    US
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logging">
+                        <a href="/login" class="logging__login">Login</a>
+                        <p class="logging__text">/</p>
+                        <a href="/logout" class="logging__sign-up">Sign up</a>
+                    </div>
+                    <div class="shopping-cart">
+                        <img src="./assets/img/shopping_cart_icon.svg" alt="shopping cart icon"
+                            class="shopping-cart__icon">
+                        <span class="shopping-cart__number">
+                            2
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <nav>
+                    <ul class="main-menu">
+                        <li class="main-menu__item">
+                            <a href="/home" class="main-menu__link">home</a>
+                        </li>
+                        <li class="main-menu__item" id="mainMenuDropDownListItem">
+                            <a class="main-menu__link">Shop beauty</a>
+                            <img src="./assets/img/arrow_down.svg" alt="arrow down">
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/blog" class="main-menu__link">Blog</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/blog" class="main-menu__link">About us</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link">Theme features</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dropdown-nav" id="headerDropdownNav">
+                <nav class="dropdown__wrapper">
+                    <div class="dropdown__pick-cards dropdown__item">
+                        <ul class="dropdown__list">
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link">Our pics</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link">Gift cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__shop-types dropdown__item">
+                        <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop by type</a>
+                        <ul class="dropdown__list">
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Shop all</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Skin care</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Make up</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Hair care</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__shop-edit dropdown__item">
+                        <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop the edit</a>
+                        <ul class="dropdown__list">
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Home beauty
+                                    essentials</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Skincare Super
+                                    Sellers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown__sale dropdown__item">
+                        <a href="/theme-features" class="main-menu__link main-menu__link--heading">Sale</a>
+                        <ul class="dropdown__list">
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Final
+                                    Reductions</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="/theme-features" class="main-menu__link main-menu__link--small">Fragrance
+                                    sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="main-slider"></section>
+        <section class="parallax-banner">
+            <div class="parallax"></div>
+        </section>
+        <footer class="main-footer">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <div class="footer__creds">
+                        <h3 class="footer__heading">Beauty store</h3>
+                        <p class="footer-__copyright">&#169; 2020 Troop Themes</p>
+                        <p>Built exclusively for Shopify's theme store</p>
+                        <div class="footer__links-block">
+                            <a href="http://www.facebook.com" class="footer__link footer__link--pic">
+                                <img src="./assets/img/facebook.svg" alt="facebook pic">
+                            </a>
+                            <a href="http://www.twitter.com" class="footer__link footer__link--pic">
+                                <img src="./assets/img/twitter.svg" alt="twitter pic">
+                            </a>
+                            <a href="http://www.instagram.com" class="footer__link footer__link--pic">
+                                <img src="./assets/img/instagram.svg" alt="instagram pic">
+                            </a>
+                            <a href="http://www.youtube.com" class="footer__link footer__link--pic">
+                                <img src="./assets/img/youtube.svg" alt="youtube pic">
+                            </a>
+                        </div>
+                        <div class="disclosure">
+                            <div class="disclosure__block">
+                                <span class="disclosure__option--current">USD $</span>
+                                <img src="./assets/img/arrow_down.svg" alt="arrow down">
+                            </div>
+                            <ul class="disclosure__list">
+                                <li class="disclosure__list-item">
+                                    <span class="disclosure__option">
+                                        AUD $
+                                    </span>
+                                </li>
+                                <li class="disclosure__list-item">
+                                    <span class="disclosure__option">
+                                        CAD $
+                                    </span>
+                                </li>
+                                <li class="disclosure__list-item">
+                                    <span class="disclosure__option">
+                                        EUR €
+                                    </span>
+                                </li>
+                                <li class="disclosure__list-item">
+                                    <span class="disclosure__option">
+                                        USD $
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="text" class="disclosure__input">
+                        </div>
+                    </div>
+                    <div class="footer__info">
+                        <h3 class="footer__heading">info</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="/about" class="footer__link">About us</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="/approach" class="footer__link">Our Approach</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="/contact" class="footer__link">Contact</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="/faq" class="footer__link">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__subscription">
+                        <h3 class="footer__heading">subscribe</h3>
+                        <p class="footer-__copyright">&#169; 2020 Troop Themes</p>
+                        <p>Sign up to our emails for VIP offers and new product offers</p>
+                        <form method="POST" accept-charset="UTF-8" action="/contact#footerForm" id="footerForm"
+                            class="footer__form">
+                            <input type="email" id="footerEmail" placeholder="Your Email" name="contact[email]"
+                                class="footer__input">
+                            <button type="submit" value="Ok" class="footer__button medium-button">Ok</button>
+                        </form>
+                        <div class="payment-icons__block">
+                            <ul class="payment-icons__list">
+                                <li class="payment-icons__list-item">
+                                    <img src="./assets/img/visa.svg" alt="visa pic">
+                                </li>
+                                <li class="payment-icons__list-item">
+                                    <img src="./assets/img/mastercard.svg" alt="mastercard pic">
+                                </li>
+                                <li class="payment-icons__list-item">
+                                    <img src="./assets/img/amex.svg" alt="amex pic">
+                                </li>
+                                <li class="payment-icons__list-item">
+                                    <img src="./assets/img/paypal.svg" alt="paypal pic">
+                                </li>
+                                <li class="payment-icons__list-item">
+                                    <img src="./assets/img/diners-club.svg" alt="diners-club pic">
+                                </li>
+                                <li class="payment-icons__list-item">
+                                    <img src="./assets/img/discover.svg" alt="discover pic">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </main>
 </body>
 
 </html>
