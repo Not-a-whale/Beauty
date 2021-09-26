@@ -274,8 +274,7 @@ a.main-menu__link--heading {
     align-items: flex-start;
     justify-content: center;
     margin: 0 -48px;
-    width: calc(100% + (48px * 2));
-    max-width: calc(100% + (48px * 2));
+    width: 100%;
     padding-left: 25px;
     padding-right: 25px;
 }

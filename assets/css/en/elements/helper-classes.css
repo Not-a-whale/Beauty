@@ -2,6 +2,11 @@
     display: block;
 }
 
-.display-smooth {
-    
+.opacity0 {
+    opacity: 0 !important;
+}
+
+.dot-active::after {
+    background: #fff;
+    box-shadow: 0 0 2px rgb(0 0 0 / 60%);
 }
