@@ -1,0 +1,22 @@
+.inpress {
+  padding: 78px 12.5vw 100px 12.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--highlights-background);
+}
+
+.inpress__block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inpress h2 {
+  text-align: center;
+}
+
+.inpress img {
+}

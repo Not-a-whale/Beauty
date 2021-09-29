@@ -40,3 +40,8 @@ mainMenuDropDownListItem.addEventListener('mouseenter', (e) => {
     }
 });
 
+
+$("body").on('mousedown','img',function(e){
+    e.stopPropagation();
+    e.preventDefault();
+});

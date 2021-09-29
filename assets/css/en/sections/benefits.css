@@ -1,0 +1,19 @@
+.benefits {
+  background-color: var(--highlights-background);
+  padding: 52px 15vw 52px 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.benefits__block img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 24px;
+}

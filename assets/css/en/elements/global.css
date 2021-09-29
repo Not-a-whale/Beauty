@@ -1,138 +1,162 @@
 /* Main styles for the whole project */
 
-*, *::before, *::after {
-    box-sizing: border-box
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    color: var(--color-text);
-    background: var(--color-page-bg);
+  color: var(--color-text);
+  background: var(--color-page-bg);
 }
 
 main {
-    display: block;
-    background-color: #ffffff
+  display: block;
+  background-color: #ffffff;
 }
 
-p,ul,ol {
-    margin: 0;
-    padding: 0
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-family: var(--font--paragraph--family);
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-text);
+  font-family: var(--font--paragraph--family);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
 }
 
-h1,h2,h3,h4,h5 {
-    margin-top: 0
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
 }
 
 h1 {
-
 }
 
 h2 {
-    font-family: var(--font--paragraph--family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
-    /* identical to box height, or 125% */
-    
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+  font-family: var(--font--paragraph--family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 h3 {
-    font-family: var(--font--paragraph--family);
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-text);
-    text-transform: uppercase;
+  font-family: var(--font--paragraph--family);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+  text-transform: uppercase;
 }
 
 h4 {
-    font-family: var(--font--accent--family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height, or 125% */
-    
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  font-family: var(--font--accent--family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h5 {
-
 }
 
 h6 {
-
 }
 
 a {
-    font-family: var(--font--accent--family);
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--color-text);
-    font-weight: normal;
+  font-family: var(--font--accent--family);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-weight: normal;
 }
 
 a:hover {
-    text-decoration: none;
-    color: var(--color-text);
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 ul {
-    list-style: none
+  list-style: none;
 }
 
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .innerdoc_wrapper ul {
-
 }
 
 .innerdoc_wrapper li {
-
 }
 
 span {
-
 }
 
 label {
-
 }
 
 img {
-
 }
 
 .innerdoc_wrapper img {
-
 }
 
 .innerdoc_wrapper {
-    
 }
 
 button.medium-button {
-    width: 52px;
-    height: 46px;
-    background-color: var(--color-text);
-    color: var(--color--alternative);
-    text-transform: uppercase;
-    border: none;
-    outline: none;
+  width: 52px;
+  height: 46px;
+  background-color: var(--color-text);
+  color: var(--color--alternative);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+button.big-button {
+  min-width: 400px;
+  height: 46px;
+  background-color: var(--color-text);
+  color: var(--color-page-bg);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+button.big-button--white {
+  min-width: 400px;
+  height: 46px;
+  background-color: var(--color-page-bg) !important;
+  color: var(--color-text) !important;
+  border: 2px solid var(--color-text) !important;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  padding-left: 8.5%;
+  padding-right: 8.5%;
 }

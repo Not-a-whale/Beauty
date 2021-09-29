@@ -1,12 +1,30 @@
 .display {
-    display: block;
+  display: block;
 }
 
 .opacity0 {
-    opacity: 0 !important;
+  opacity: 0 !important;
+}
+
+.opacity05 {
+  opacity: 0.5 !important;
+}
+
+.opacity05:hover {
+  cursor: not-allowed !important;
+  transform: scale(1) !important;
+  box-shadow: none !important;
 }
 
 .dot-active::after {
-    background: #fff;
-    box-shadow: 0 0 2px rgb(0 0 0 / 60%);
+  background: #fff;
+  box-shadow: 0 0 2px rgb(0 0 0 / 60%);
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.circled-gift-card {
+  border: 1px solid #e3e6e9 !important;
 }

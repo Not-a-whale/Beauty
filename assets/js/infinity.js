@@ -11,7 +11,7 @@ let dragEndPoint;
 
 /* Functions */
 
-function slider() {
+function sliderFunc() {
     images.forEach(image => image.classList.add('opacity0'));
     images[current].classList.remove('opacity0');
 }
@@ -30,10 +30,8 @@ function touchMove() {
 function touchDownMove() {
     dragEndPoint = event.pageX;
     if (dragStartPoint !== dragEndPoint && (dragStartPoint - dragEndPoint) > 100) {
-        console.log('current touchDownMove right', current)
         moveNext();
     } else if (dragStartPoint !== dragEndPoint && (dragStartPoint - dragEndPoint) < 0) {
-        console.log('current touchDownMove left', current)
         movePrev();
     }
 }
@@ -44,8 +42,7 @@ function moveNext() {
     } else {
         current++;
     }
-    console.log('moveNext', current)
-    slider();
+    sliderFunc();
     makeDotActive();
     dragEndPoint = 0;
     dragStartPoint = 0;
@@ -57,7 +54,7 @@ function movePrev() {
     } else {
         current--;
     }
-    slider();
+    sliderFunc();
     makeDotActive();
     dragEndPoint = 0;
     dragStartPoint = 0;
@@ -82,7 +79,7 @@ document.querySelector('.carousel--prev').onclick = function () {
 dots.forEach((dot, index) => dot.addEventListener('click', () => {
     current = index;
     makeDotActive();
-    slider();
+    sliderFunc();
 }));
 
 

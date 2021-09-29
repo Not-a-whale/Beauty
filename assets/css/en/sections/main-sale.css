@@ -1,0 +1,27 @@
+.main-sale {
+  margin-bottom: 74px;
+}
+
+.main-sale__parallax {
+  background-image: url("../../../img/sale.jpg");
+}
+
+.main-sale .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 40%;
+  min-height: 200px;
+  margin: 0;
+}
+
+.main-sale .text-block h2,
+.main-sale .text-block h3,
+.main-sale .text-block h4,
+.main-sale .text-block p,
+.main-sale .text-block a {
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+.favorites {
+  max-width: 100vw;
+  margin-bottom: 73px;
+  overflow: hidden;
+}
+
+.favorites img {
+  max-width: 1300px;
+}
+
+.favorites__column {
+  padding-left: 8.5vw;
+}
+
+.favorites__row {
+  background-color: var(--color-slider-button);
+}
