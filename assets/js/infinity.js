@@ -2,6 +2,8 @@
 
 let images = document.querySelectorAll('.main-slider__image');
 const dots = Array.from(document.querySelectorAll('.carousel--dot'));
+const mainCarouselNext = document.querySelector('.carousel--next');
+const mainCarouselPrev = document.querySelector('.carousel--prev');
 
 /* Variables */
 
@@ -13,15 +15,20 @@ let dragEndPoint;
 
 function sliderFunc() {
     images.forEach(image => image.classList.add('opacity0'));
-    images[current].classList.remove('opacity0');
+    if(images[current]) {
+        images[current].classList.remove('opacity0');
+    }
 }
 
 function makeDotActive() {
     dots.forEach((dot, index) => {
         dot.classList.remove('dot-active');
     });
-    dots[current].classList.add('dot-active');
+    if(dots[current]) {
+        dots[current].classList.add('dot-active');
+    }
 }
+
 
 function touchMove() {
     dragStartPoint = event.pageX;
@@ -67,12 +74,15 @@ function movePrev() {
 /* images.forEach(image => image.addEventListener('mousedown', touchDownMove));
 images.forEach(image => image.addEventListener('mouseleave', touchMove));
  */
-document.querySelector('.carousel--next').onclick = function () {
-    moveNext();
-};
 
-document.querySelector('.carousel--prev').onclick = function () {
-    movePrev();
+if(mainCarouselPrev && mainCarouselNext) {
+    document.querySelector('.carousel--next').onclick = function () {
+        moveNext();
+    };
+    
+    document.querySelector('.carousel--prev').onclick = function () {
+        movePrev();
+    }
 }
 
 
