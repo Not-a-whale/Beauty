@@ -7,8 +7,8 @@ $(document).ready(function() {
         $(".overlay").toggleClass('overlay-active');
     });
 
-    $(".dropdown__wrapper").mouseleave(function() {
-
+    $(".dropdown-nav").mouseleave(function() {
+        $("#headerDropdownNav").removeClass("display");
     })
 
 })
