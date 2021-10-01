@@ -272,7 +272,7 @@
                             <h2 class="text-block__heading text-block__heading--large">the new & Natural</h2>
                             <p>Copy
                                 The award-winning, all-natural skincare range for a new, healthier you.</p>
-                            <a href="text-block__link" href="/collection">Shop now</a>
+                            <a class="text-block__link" href="/collection">Shop now</a>
                         </div>
                     </div>
                     <div class="main-slider__image main-slider__image--second">
@@ -286,7 +286,7 @@
                             <p>
                                 The most popular in skincare this Summer
                             </p>
-                            <a href="text-block__link" href="/collection">Shop now</a>
+                            <a class="text-block__link" href="/collection">Shop now</a>
                         </div>
                     </div>
                     <div class="main-slider__image main-slider__image--third">
@@ -302,7 +302,7 @@
                             <p>
                                 Neon Makeup Is Trending — We've together Our Top Picks for The Start to Summer
                             </p>
-                            <a href="text-block__link" href="/collection">Shop now</a>
+                            <a class="text-block__link" href="/collection">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -913,8 +913,8 @@
                 <h4>gift cards</h4>
                 <h2>Beauty club gift card</h2>
                 <h3 class="mb-3">€17,03</h3>
-                <label for="text" class="gift-card__dropdown-title">Title</label>
-                <div class="disclosure w-100">
+                <label for="giftCardDisclosure" class="gift-card__dropdown-title">Title</label>
+                <div class="disclosure w-100" id="giftCardDisclosure">
                     <div class="disclosure__block">
                         <span class="disclosure__option--current">Text</span>
                         <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
@@ -955,7 +955,7 @@
             <div class="container-fluid">
                 <div class="row favorites__row">
                     <div class="col-sm-12 col-md-4 ml-25 favorites__column d-flex flex-column my-md-auto">
-                        <h4>FACIAL FAVS</h3>
+                        <h4>FACIAL FAVS</h4>
                         <h2>
                             2 for 1 Face masks
                         </h2>
@@ -1000,9 +1000,9 @@
                     </div>
                 </div>
                 <div class="row main_blog__row main_blog__row--bottom d-flex justify-content-center flex-nowrap mt-md-5">
-                    <button class="medium-button my-auto">
+                    <div class="medium-button my-auto">
                         <a href="./blog" class="text-white">View more</a>
-                    </button>   
+                    </div>   
                 </div>
             </div>
         </section>
@@ -1040,18 +1040,19 @@
         <section class="benefits">
             <div class="benefits__block">
                 <img loading="lazy" src="./assets/img/icon/cosmetics.svg" alt="cosmetics pic">
-                <h3>responsibly sourced brands</h4>
+                <h3>responsibly sourced brands</h3>
             </div>
             <div class="benefits__block">
                 <img loading="lazy" src="./assets/img/icon/heart.svg" alt="heart pic">
-                <h3>Sutainable packaging</h4>
+                <h3>Sutainable packaging</h3>
             </div>
             <div class="benefits__block">
                 <img loading="lazy" src="./assets/img/icon/smile.svg" alt="smile pic">
-                <h3>24/7 customer service</h4>
+                <h3>24/7 customer service</h3>
             </div>
         </section>
         <section class="parallax-banner parallax-banner--low">
+            <h6>any old heading</h6>
             <div class="parallax lazy-background lazy-background-1"></div>
         </section>
     </main>
@@ -1246,7 +1247,7 @@
                     </li>
                     <li class="main-menu__list-item">
                         <a href="/blog">Blog</a>
-                    </li class="main-menu__list-item">
+                    </li>
                     <li class="main-menu__list-item">
                         <a href="/about">about</a>
                     </li>
