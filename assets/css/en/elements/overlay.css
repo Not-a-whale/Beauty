@@ -8,6 +8,7 @@
   z-index: 110;
   visibility: hidden;
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .overlay a img {
@@ -33,6 +34,7 @@
   position: relative;
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  transition: all 0.5s ease-in-out;
 }
 
 .overlay__main-menu .main-menu__top {

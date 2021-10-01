@@ -61,7 +61,6 @@
 
 .overlay-active {
   visibility: visible !important;
-  opacity: 0 !important;
 }
 
 .overlay-active .overlay__main-menu {
