@@ -13,6 +13,14 @@ let dragEndPoint;
 
 /* Functions */
 
+let timer;
+
+function startTimer(){
+    timer = setInterval(moveNext, 5000);
+};
+
+startTimer();
+
 function sliderFunc() {
     images.forEach(image => image.classList.add('opacity0'));
     if(images[current]) {
@@ -30,18 +38,37 @@ function makeDotActive() {
 }
 
 
-function touchMove() {
+function startMouseCapture(event) {
+    clearInterval(timer);
     dragStartPoint = event.pageX;
 }
 
-function touchDownMove() {
-    dragEndPoint = event.pageX;
-    if (dragStartPoint !== dragEndPoint && (dragStartPoint - dragEndPoint) > 100) {
-        moveNext();
-    } else if (dragStartPoint !== dragEndPoint && (dragStartPoint - dragEndPoint) < 0) {
-        movePrev();
+function releaseMouseCapture(event) {
+    dragEndPoint = event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    let delta = dragEndPoint - dragStartPoint;
+
+    if(event.type.includes('mouse')) {
+        if (Math.abs(delta) > 100)
+        {
+            if (delta > 0) moveNext();
+            else  movePrev();
+        }    
+        dragStartPoint = dragEndPoint;
+        startTimer();
+    } else {
+        if (Math.abs(delta) > 10)
+        {
+            if (delta > 0) moveNext();
+            else  movePrev();
+        }    
+        dragStartPoint = dragEndPoint;
+        startTimer();
     }
+    dragStartPoint = 0;
+    dragEndPoint = 0;
 }
+
+
 
 function moveNext() {
     if (current + 1 == images.length) {
@@ -70,17 +97,19 @@ function movePrev() {
 
 /* Event listeners */
 
-
-/* images.forEach(image => image.addEventListener('mousedown', touchDownMove));
-images.forEach(image => image.addEventListener('mouseleave', touchMove));
- */
+images.forEach(image => image.addEventListener('mousedown', startMouseCapture));
+images.forEach(image => image.addEventListener('mouseup', releaseMouseCapture));
 
 if(mainCarouselPrev && mainCarouselNext) {
     document.querySelector('.carousel--next').onclick = function () {
+        clearInterval(timer);
+        startTimer()
         moveNext();
     };
     
     document.querySelector('.carousel--prev').onclick = function () {
+        clearInterval(timer);
+        startTimer()
         movePrev();
     }
 }
@@ -93,4 +122,3 @@ dots.forEach((dot, index) => dot.addEventListener('click', () => {
 }));
 
 
-setInterval(moveNext, 5000);

@@ -35,12 +35,6 @@ document.querySelectorAll('.carousel__slider').forEach((slider) => {
   // make responsive to viewport changes
   window.addEventListener('resize', setPositionByIndex)
 
-  // prevent menu popup on long press
-  /* window.oncontextmenu = function (event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-  } */
 
   function getPositionX(event) {
     return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
@@ -70,12 +64,12 @@ document.querySelectorAll('.carousel__slider').forEach((slider) => {
     const movedBy = currentTranslate - prevTranslate;
 
     // if moved enough negative then snap to next slide if there is one
-    if (movedBy < -100 && currentIndex < slides.length - 1) {
+    if (movedBy < -100) {
         currentIndex += 1;
         slider.style.transform = `translateX(0)`
     } 
     // if moved enough positive then snap to previous slide if there is one
-    if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+    if (movedBy > 100) currentIndex -= 1
 
     setPositionByIndex()
 
@@ -88,9 +82,11 @@ document.querySelectorAll('.carousel__slider').forEach((slider) => {
   }
 
   function setPositionByIndex() {
+    if (currentIndex < 0) currentIndex = slides.length -1;
+    if (currentIndex == slides.length) currentIndex = 0;
     currentTranslate = currentIndex * -window.innerWidth
     prevTranslate = currentTranslate;
-    blockButtons();
+    
     setSliderPosition()
   }
 
@@ -98,46 +94,21 @@ document.querySelectorAll('.carousel__slider').forEach((slider) => {
     slider.style.transform = `translateX(${currentTranslate}px)`;
   }
 
-  function blockButtons() {
-    if(currentIndex === 0 && leftArrow && rightArrow) {
-        leftArrow.classList.add('opacity05');
-        rightArrow.classList.remove('opacity05');
-    } else if((currentIndex < slides.length) && leftArrow && rightArrow) {
-        rightArrow.classList.add('opacity05');
-        leftArrow.classList.remove('opacity05');
-    }
-  }
-
-
+  
 
   if(rightArrow && leftArrow) {
     rightArrow.addEventListener('click', () => {
-      if(currentIndex < slides.length - 1) {
           currentIndex++;
-          setPositionByIndex();
-      }
+          setPositionByIndex();      
   });
 
   if(rightArrow && leftArrow) {
   leftArrow.addEventListener('click', () => {
-      if(currentIndex !== 0) {
           currentIndex--;
-          setPositionByIndex();
-      }
+          setPositionByIndex();      
   });
   }
   }
-
-
-
-
-  if(leftArrow) {
-    document.addEventListener('DOMContentLoaded', () => {
-      leftArrow.classList.add('opacity05')
-    });
-  }
-
-
 
 })
 

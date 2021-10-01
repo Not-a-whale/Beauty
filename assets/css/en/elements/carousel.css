@@ -5,6 +5,10 @@
   -webkit-user-drag: none;
 }
 
+.carousel .carousel__item {
+  text-decoration: none;
+}
+
 .carousel__slider {
   display: inline-flex;
   overflow: hidden;
@@ -20,6 +24,10 @@
   padding-left: 5vw;
   padding-right: 5vw;
   justify-content: space-between;
+}
+
+.carousel__slider--mobile {
+  display: none;
 }
 
 .carousel__item:not(:last-child) {

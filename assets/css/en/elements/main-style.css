@@ -1,5 +1,6 @@
 :root {
   --image--popup: url("//cdn.shopify.com/s/files/1/0348/6821/files/Stocksy_txp2f2db77agsj200_Small_3189776_1200x.jpg?v=1591887424");
+  /* Colors */
   --color--accent: #ffd7d7;
   --color-text: #212121;
   --color-page-bg: #ffffff;
@@ -30,4 +31,12 @@
   --payment-terms-background-color: #ffffff;
   --badge-color: #f7bcc7;
   --highlights-background: #fcfbfc;
+
+  /* Breakpoints */
+
+  --tiny-mobile-breakpoint: 374px;
+  --mobile-breakpoint: 767px;
+  --tablet-breakpoint: 1023px;
+  --desktop-breakpoint: 1439px;
+  --big-desktop-breakpoint: 1919px;
 }

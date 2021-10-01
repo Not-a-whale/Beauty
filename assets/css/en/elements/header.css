@@ -289,3 +289,17 @@ a.main-menu__link--heading {
 .dropdown__pick-cards {
   padding-right: 64px;
 }
+
+.mobile__nav-trigger {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.logging__mobile {
+  display: none;
+}
+
+.flag__mobile {
+  display: none;
+}

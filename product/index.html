@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collection</title>
+    <title>Product</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../assets/css/en/sections/favorites.css">
     <link rel="stylesheet" href="../assets/css/en/sections/gift-card.css">
     <link rel="stylesheet" href="../assets/css/en/sections/main-sale.css">
-    <link rel="stylesheet" href="../assets/css/en/pages/collection.css">
+    <link rel="stylesheet" href="../assets/css/en/pages/product.css">
     <link rel="stylesheet" href="../assets/css/en/elements/mobile-styles.css">
     <script src="../assets/js/infinity.js" defer></script>
     <script src="../assets/js/main.js" defer></script>
@@ -52,13 +52,13 @@
     <header class="header__root">
         <div class="header__top">
             <div class="mobile__nav-trigger">
-                <img src="../assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
+                <img src="./assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
             </div>
             <div class="header__left">
                 <div class="disclosure">
                     <div class="disclosure__block">
                         <span class="disclosure__option--current">USD $</span>
-                        <img loading="lazy" src="../assets/img/arrow_down.svg" alt="arrow down">
+                        <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
                     </div>
                     <ul class="disclosure__list">
                         <li class="disclosure__list-item">
@@ -85,19 +85,19 @@
                     <input type="text" class="disclosure__input">
                 </div>
                 <div class="search-bar">
-                    <img loading="lazy" src="../assets/img/search_icon.svg" alt="search image" class="search-bar__img">
+                    <img loading="lazy" src="./assets/img/search_icon.svg" alt="search image" class="search-bar__img">
                 </div>
             </div>
             <div class="header__center">
                     <a href="/" role="banner" title="Blockshop theme - Beauty">
-                        <img loading="lazy" src="../assets/img/main_logo.png" alt="">
+                        <img loading="lazy" src="./assets/img/main_logo.png" alt="">
                     </a>
             </div>
             <div class="header__right">
                 <div class="flag flag__desktop">
                     <div class="flag__options">
                         <div class="flag__option">
-                            <img loading="lazy" src="../assets/img/UAE_flag.png" alt="UAE flag">
+                            <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
                             <p>UAE</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                     <a href="/login" class="logging__sign-up">Sign up</a>
                 </div>
                 <div class="shopping-cart">
-                    <img loading="lazy" src="../assets/img/shopping_cart_icon.svg" alt="shopping cart icon"
+                    <img loading="lazy" src="./assets/img/shopping_cart_icon.svg" alt="shopping cart icon"
                         class="shopping-cart__icon">
                     <span class="shopping-cart__number">
                         2
@@ -130,7 +130,7 @@
         </div>
         <div class="header__bottom">
             <div class="mobile__nav-trigger">
-                <img src="../assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
+                <img src="./assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
             </div>
             <div class="logging logging__mobile">
                 <a href="/login" class="logging__login">Login</a>
@@ -144,7 +144,7 @@
                     </li>
                     <li class="main-menu__item" id="mainMenuDropDownListItem">
                         <a class="main-menu__link">Shop beauty</a>
-                        <img loading="lazy" src="../assets/img/arrow_down.svg" alt="arrow down">
+                        <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
                     </li>
                     <li class="main-menu__item">
                         <a href="/blog" class="main-menu__link">Blog</a>
@@ -160,7 +160,7 @@
             <div class="flag__mobile">
                 <div class="flag__options">
                     <div class="flag__option">
-                        <img loading="lazy" src="../assets/img/UAE_flag.png" alt="UAE flag">
+                        <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
                         <p>UAE</p>
                     </div>
                 </div>
@@ -236,229 +236,87 @@
             </nav>
         </div>
     </header>
-    <section class="collection__banner">
-        <h1>All products</h1>
-    </section>
-    <div class="items-grid">
-        <div class="coninainer-fluid">
+    <section class="breadcrumbs">
+        <h6 class="d-none"></h6>
+        <div class="contianer">
             <div class="row">
-                <div class="sorting col-6">
-                    <div class="sorting__wrapper">
-                        <span class="sorting__item">Browse</span>
-                        <span class="sorting__item">Sort by</span>
-                        <span class="sorting__item">refine</span>
+                <div class="col-12 breadcrumbs__wrapper">
+                    <div class="breadcrums__breadcrumb">
+                        <a href="/">Home <span class="slash">/</span></a>
                     </div>
-                </div>
-                <div class="pads col-6">
-                    <div class="pads__wrapper">
-                        <div class="pads__item">
-                            <img src="../assets/img/icon/2x2.svg" alt="2x2 pic">
-                        </div>
-                        <div class="pads__item">
-                            <img src="../assets/img/icon/3x3.svg" alt="3x3 pic">
-                        </div>
+                    <div class="breadcrums__breadcrumb">
+                        <a href="/">Products <span class="slash">/</span></a>
+                    </div>
+                    <div class="breadcrums__breadcrumb">
+                        <a href="/">ORSEN Luxe Face Cream</a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="product">
         <div class="container-fluid">
             <div class="row">
-                <a class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/1.jpg" alt="powder img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                <div class="col-lg-4 col-md-6 col-sm-12 product__buttons">
+                    <h2>
+                        ORSEN Luxe Face Cream
+                    </h2>
+                    <h3>€32,95</h4>
+                    <button class="big-button big-button--white mb-3">add to cart</button>
+                    <button class="big-button">buy it now</button>
+                    <div class="gift-card__bottom-selection product__selection">
+                        <div class="gift-card__selection-item circled-gift-card">
+                            <img loading="lazy" src="../assets/img/product/item_1_small.png" alt="item 1 small">
+                        </div>
+                        <div class="gift-card__selection-item">
+                            <img loading="lazy" src="../assets/img/product/item_2_small.png" alt="item 1 small">
                         </div>
                     </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Bright Blush Powder
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span class="just-dropped__crossed carousel__crossed">€32,95</span>
-                        <span>€21,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/2.jpg" alt="mask img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Conditioning mask
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span>€16,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/1.jpg" alt="powder img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Bright Blush Powder
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span class="just-dropped__crossed carousel__crossed">€32,95</span>
-                        <span>€21,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/2.jpg" alt="mask img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Conditioning mask
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span>€16,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/1.jpg" alt="powder img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Bright Blush Powder
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span class="just-dropped__crossed carousel__crossed">€32,95</span>
-                        <span>€21,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/2.jpg" alt="mask img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Conditioning mask
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span>€16,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/1.jpg" alt="powder img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Bright Blush Powder
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span class="just-dropped__crossed carousel__crossed">€32,95</span>
-                        <span>€21,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/2.jpg" alt="mask img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Conditioning mask
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span>€16,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/1.jpg" alt="powder img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Bright Blush Powder
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span class="just-dropped__crossed carousel__crossed">€32,95</span>
-                        <span>€21,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-6 col-md-6 col-sm-12 my-4">
-                    <img loading="lazy" src="../assets/img/banner-collection.png" alt="banner collection img" class="h-100">
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/2.jpg" alt="mask img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Conditioning mask
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span>€16,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/1.jpg" alt="powder img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Bright Blush Powder
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span class="just-dropped__crossed carousel__crossed">€32,95</span>
-                        <span>€21,95</span>
-                    </div>
-                </a>
-                <a href="../product" class="just-dropped__item carousel__item col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="just-dropped__img-container carousel__img-container">
-                        <img loading="lazy" class="just-dropped__img carousel__img" src="../assets/img/just_dropped/2.jpg" alt="mask img">
-                        <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
-                        </div>
-                    </div>
-                    <h4 class="just-dropped__heading carousel__heading">
-                        Conditioning mask
-                    </h4>
-                    <div class="just-dropped__price carousel__price">
-                        <span>€16,95</span>
-                    </div>
-                </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 product__img">
+                    <img loading="lazy" src="../assets/img/product/item_1_big.png" alt="item 1 creme big">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 product__text">
+                    <p class="mb-3">
+                        This is a Beyond Beauty product which means it has been sourced, tried and tested and finally declared one of the most new and innovative heroes out there.
+                    </p>
+                    <p class="mb-3">
+                        ORSEN’s anti-aging Face Cream will keep your skin hydrated and firm throughout the day. When used at night, you awaken to healthy-looking and refreshed skin 24/7. It quickly absorbs into the skin to give your complexion a radiant glow. Skullcap and Purslane are anti-aging powerhouses that help calm the skin and reduce visible signs of irritation.
+                    </p>
+                    <p class="mb-3">
+                        This is a demonstration store. This product, and its image and text, is placeholder only. Images created by Troop Themes
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="product__share">
+        <h2>Share this</h2>
+        <div class="product__social-networks">
+            <a href="http://www.twitter.com" class="product__social-network">
+                <img loading="lazy" src="../assets/img/twitter.svg" alt="twitter icon">
+                <h4>Tweet</h4>
+            </a>
+            <a href="http://www.facebook.com" class="product__social-network product__social-network--facebook">
+                <img loading="lazy" src="../assets/img/facebook.svg" alt="facebook icon">
+                <h4>Like</h4>
+            </a>
+            <a href="http://www.twitter.com" class="product__social-network">
+                <img loading="lazy" src="../assets/img/icon/pinterest.svg" alt="pinterest icon">
+                <h4>Tweet</h4>
+            </a>
+        </div>
+    </section>
     <section class="skincare carousel">
-        <h2 class="skincare__header carousel__header text-left">Recently viewed</h2>
+        <h2 class="skincare__header carousel__header text-left">You may also like</h2>
         <div class="skincare__slider carousel__slider carousel__slider--desktop">
             <div class="skincare__container carousel__container">
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
                         <div class="skincare__badge skincare__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/1.jpg" alt="powder img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/1.jpg" alt="powder img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -471,9 +329,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/2.jpg" alt="mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/2.jpg" alt="mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -485,9 +343,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/3.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/3.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -499,9 +357,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/4.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/4.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -516,9 +374,9 @@
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
                         <div class="skincare__badge skincare__badge--sale carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/5.jpg" alt="powder img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/5.jpg" alt="powder img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -531,9 +389,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/6.jpg" alt="mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/6.jpg" alt="mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -545,9 +403,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/7.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/7.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -559,9 +417,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/8.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/8.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -578,9 +436,9 @@
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
                         <div class="skincare__badge skincare__badge--sale carousel__badge carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/1.jpg" alt="powder img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/1.jpg" alt="powder img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -593,9 +451,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/2.jpg" alt="mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/2.jpg" alt="mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -610,9 +468,9 @@
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
                         <div class="skincare__badge skincare__badge--sale carousel__badge--sale">Sale</div>
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/5.jpg" alt="powder img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/5.jpg" alt="powder img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -625,9 +483,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/6.jpg" alt="mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/6.jpg" alt="mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -641,9 +499,9 @@
             <div class="skincare__container carousel__container">
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/7.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/7.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -655,9 +513,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/8.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/8.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -671,9 +529,9 @@
             <div class="skincare__container carousel__container">
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/3.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/3.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -685,9 +543,9 @@
                 </a>
                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
-                        <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/4.jpg" alt="rejuvenating mask img">
+                        <img loading="lazy" class="skincare__img carousel__img" src="assets/img/skincare/4.jpg" alt="rejuvenating mask img">
                         <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
-                            <img loading="lazy" src="../assets/img/icon/plus.svg" alt="plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
                         </div>
                     </div>
                     <h4 class="skincare__heading carousel__heading">
@@ -698,11 +556,6 @@
                     </div>
                 </a>
             </div>
-        </div>
-    </section>
-    <section class="parallax-banner">
-        <div class="parallax main-sale__parallax">
-            <h2 class="text-block__heading text-block__heading--large">up to 30% off selected brands</h2>
         </div>
     </section>
     <footer class="main-footer">

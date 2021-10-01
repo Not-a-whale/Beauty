@@ -28,3 +28,33 @@
 .circled-gift-card {
   border: 1px solid #e3e6e9 !important;
 }
+
+.lazy-background-1 {
+  padding-top: 69.1358%;
+  background: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lazy-background-2 {
+  padding-top: 69.1358%;
+  background: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lazy-background-1.visible {
+  background: url("../../../img/parallax-banner.jpg"); /* The final image */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lazy-background-2.visible {
+  background: url("../../../img/sale.jpg"); /* The final image */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

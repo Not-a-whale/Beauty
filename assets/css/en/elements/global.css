@@ -39,6 +39,16 @@ h5 {
 }
 
 h1 {
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  /* page-bg */
+
+  color: var(--color-button);
 }
 
 h2 {
@@ -74,9 +84,21 @@ h4 {
 }
 
 h5 {
+  font-family: var(--font--accent--family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-bottom: 0;
 }
 
 h6 {
+  display: none;
 }
 
 a {
@@ -114,6 +136,33 @@ span {
 }
 
 label {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input {
+  max-width: 250px;
+  max-height: 46px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  background-color: var(--color-page-bg);
+  cursor: pointer;
+  padding: 8px 15px 8px 16px;
+  background: #ffffff;
 }
 
 img {
@@ -125,9 +174,13 @@ img {
 .innerdoc_wrapper {
 }
 
+button {
+  outline: none;
+}
+
 button.medium-button {
   width: 52px;
-  height: 46px;
+  height: 38px;
   background-color: var(--color-text);
   color: var(--color--alternative);
   text-transform: uppercase;
@@ -145,9 +198,18 @@ button.big-button {
   outline: none;
 }
 
-button.big-button--white {
-  min-width: 400px;
+button.small-button {
+  width: 116px;
   height: 46px;
+  background-color: var(--color-text);
+  color: var(--color-page-bg);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+button.big-button--white {
   background-color: var(--color-page-bg) !important;
   color: var(--color-text) !important;
   border: 2px solid var(--color-text) !important;
@@ -159,4 +221,8 @@ button.big-button--white {
 .wrapper {
   padding-left: 8.5%;
   padding-right: 8.5%;
+}
+
+.container__bottom {
+  margin-bottom: 74px;
 }
