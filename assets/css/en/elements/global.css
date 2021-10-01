@@ -133,6 +133,7 @@ li {
 }
 
 span {
+  display: flex;
 }
 
 label {
@@ -225,4 +226,12 @@ button.big-button--white {
 
 .container__bottom {
   margin-bottom: 74px;
+}
+
+.currency_en {
+}
+
+.currency_number_en {
+  margin-right: 2px;
+  margin-left: 2px;
 }
