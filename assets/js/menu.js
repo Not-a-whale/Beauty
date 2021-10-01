@@ -11,6 +11,17 @@ $(document).ready(function() {
         setTimeout(() => {
             $("#headerDropdownNav").removeClass("display");
         }, 1000)
+    });
+
+    $("#overlayMenu1Trigger").click(function() {
+        let firstMenuWidth = $("#firstList").width();
+        let secondMenuWidth = $(".main-menu__submenu-1").width();
+        $("#firstList").css({
+            transform: `translateX(-${firstMenuWidth}px)`,
+        });
+        $(".main-menu__submenu-1").css({
+            transform: `translateX(${secondMenuWidth}px)`
+        })
     })
 
 })

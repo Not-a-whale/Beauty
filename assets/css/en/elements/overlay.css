@@ -87,3 +87,11 @@
     left: 87%;
   }
 }
+
+#firstList {
+  transition: 0.3s all;
+}
+
+.main-menu__submenu-1 {
+  transition: 0.3s all;
+}
