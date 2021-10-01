@@ -8,7 +8,9 @@ $(document).ready(function() {
     });
 
     $(".dropdown-nav").mouseleave(function() {
-        $("#headerDropdownNav").removeClass("display");
+        setTimeout(() => {
+            $("#headerDropdownNav").removeClass("display");
+        }, 1000)
     })
 
 })
