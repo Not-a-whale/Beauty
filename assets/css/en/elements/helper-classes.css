@@ -70,3 +70,15 @@
 .overlay-active .overlay-cross {
   display: block !important;
 }
+
+.isRTL {
+  direction: rtl !important;
+}
+
+.carousel--prev.isRTL {
+  left: 0;
+}
+
+.overlay__main-menu.isRTL {
+  right: 0 !important;
+}

@@ -5,5 +5,10 @@ $(document).ready(function() {
 
     $(".overlay-cross").click(function() {
         $(".overlay").toggleClass('overlay-active');
+    });
+
+    $(".dropdown__wrapper").mouseleave(function() {
+
     })
+
 })
