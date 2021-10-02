@@ -15,27 +15,106 @@ $(document).ready(function() {
     });
 
     $("#overlayMenu1Trigger").click(function() {
-        const sumbenu1 =  $(".main-menu__submenu-1");
+        const submenu1 =  $(".main-menu__submenu-1");
         $("#firstList").css({
             transform: `translateX(-100%)`,
         });
-        sumbenu1.css({
+        submenu1.css({
             transform: `translateX(100%)`,
             visibility: "visible"
         });
         container.animate({
-            height: `${sumbenu1[0].offsetHeight}px`
+            height: `${submenu1[0].offsetHeight}px`
         });
     })
 
     $("#backToMenu0").click(function(e) {
-        const sumbenu1 =  $("#firstList");
+        const submenu1 =  $("#firstList");
+        const submenu2 =  $(".main-menu__submenu-1");
         e.stopPropagation();
+        console.log('back')
         $("#firstList").css({
-            transform: `translateX(1%)`,
+            transform: `translateX(0%)`,
         });
+        submenu2.css({
+            visibility: 'hidden'
+        })
         container.animate({
-            height: `${sumbenu1[0].offsetHeight}px`
+            height: `${submenu1[0].offsetHeight}px`
         });
     })
+
+    $(".backToMenu1").click(function(e) {
+        e.stopPropagation();
+        console.log('eee')
+        const submenu2_1 =  $("#submenu2_1");
+        const submenu2_2 =  $("#submenu2_1");
+        const submenu2_3 =  $("#submenu2_1");
+        const submenu1 =  $(".main-menu__submenu-1");
+        submenu1.css({
+            transform: `translateX(100%)`,
+            visibility: "visible"
+        });
+        [submenu2_1, submenu2_2, submenu2_3].forEach(element => {
+            $(element).css({
+                transform: `translateX(100%)`,
+                visibility: 'hidden'
+            })
+        });
+        container.animate({
+            height: `${submenu1[0].offsetHeight}px`
+        });
+    })
+
+    $("#triggerSubmenu2_1").click(function(e) {
+        const submenu2 =  $("#submenu2_1");
+        const submenu1 =  $(".main-menu__submenu-1");
+        e.stopPropagation();
+        console.log('eee 1 ')
+        submenu1.css({
+            transform: `translateX(-100%)`,
+        });
+        submenu2.css({
+            transform: `translateX(200%)`,
+            visibility: 'visible'
+        });
+        container.animate({
+            height: `${submenu2[0].offsetHeight}px`
+        });
+    });
+
+    
+    $("#triggerSubmenu2_2").click(function(e) {
+        console.log('submenu 2')
+        const submenu2 =  $("#submenu2_2");
+        const submenu1 =  $(".main-menu__submenu-1");
+        e.stopPropagation();
+        submenu1.css({
+            transform: `translateX(-100%)`,
+        });
+        submenu2.css({
+            transform: `translateX(200%)`,
+            visibility: 'visible'
+        });
+        container.animate({
+            height: `${submenu2[0].offsetHeight}px`
+        });
+    });
+
+    $("#triggerSubmenu2_3").click(function(e) {
+        const submenu2 =  $("#submenu2_3");
+        const submenu1 =  $(".main-menu__submenu-1");
+        console.log('submenu 3')
+        e.stopPropagation();
+        submenu1.css({
+            transform: `translateX(-100%)`,
+        });
+        submenu2.css({
+            transform: `translateX(200%)`,
+            visibility: 'visible'
+        });
+        container.animate({
+            height: `${submenu2[0].offsetHeight}px`
+        });
+    });
 })
