@@ -46,8 +46,8 @@ $(document).ready(function() {
     $(".backToMenu1").click(function(e) {
         e.stopPropagation();
         const submenu2_1 =  $("#submenu2_1");
-        const submenu2_2 =  $("#submenu2_1");
-        const submenu2_3 =  $("#submenu2_1");
+        const submenu2_2 =  $("#submenu2_2");
+        const submenu2_3 =  $("#submenu2_3");
         const submenu1 =  $(".main-menu__submenu-1");
         submenu1.css({
             transform: `translateX(100%)`,
