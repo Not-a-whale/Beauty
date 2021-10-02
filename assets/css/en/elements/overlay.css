@@ -56,7 +56,6 @@
 }
 
 .main-menu__submenu {
-  display: none;
 }
 
 .overlay a {
@@ -93,5 +92,27 @@
 }
 
 .main-menu__submenu-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
   transition: 0.3s all;
+  transition-delay: 200ms;
+}
+
+.main-menu__submenu-2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  transition: 0.3s all;
+  transition-delay: 200ms;
+}
+
+.main-menu__list {
+  position: relative;
+}
+
+.main-menu__chevron-left {
+  transform: rotate(180deg);
 }
