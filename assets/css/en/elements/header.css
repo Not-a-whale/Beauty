@@ -26,6 +26,11 @@
   line-height: 1;
 }
 
+.announcement__icon img {
+  max-width: 22px;
+  max-height: 25px;
+}
+
 /* Announcement block ends */
 
 /* Header block starts */

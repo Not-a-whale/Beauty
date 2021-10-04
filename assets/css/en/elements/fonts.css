@@ -53,22 +53,4 @@
 }
 
 :root {
-  --font--featured-heading--size: 24px;
-  --font--section-heading--size: 20px;
-  --font--block-heading--size: 16px;
-  --font--heading--uppercase: uppercase;
-  --font--paragraph--size: 16px;
-  --font--heading--family: Roboto, sans-serif;
-  --font--heading--weight: 400;
-  --font--heading--normal-weight: 400;
-  --font--heading--style: normal;
-  --font--accent--family: Karla, sans-serif;
-  --font--accent--weight: 400;
-  --font--accent--style: normal;
-  --font--accent--size: 13px;
-  --font--paragraph--family: Roboto, sans-serif;
-  --font--paragraph--weight: 400;
-  --font--paragraph--style: normal;
-  --font--bolder-paragraph--weight: 700;
-  --font--gift-card: "Playfair Display", serif;
 }

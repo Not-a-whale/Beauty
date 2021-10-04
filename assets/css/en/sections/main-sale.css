@@ -1,3 +1,17 @@
+.parallax-banner {
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax {
+  padding-top: 69.1358%;
+  /*   background-image: url("../../../img/parallax-banner.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-sale {
   margin-bottom: 74px;
 }
@@ -9,13 +23,13 @@
 .main-sale .text-block {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 40%;
-  min-height: 200px;
-  margin: 0;
+  transform: translate(-50%, -58%);
+  flex-shrink: 1;
+  max-width: 500px;
 }
 
 .main-sale .text-block h2,

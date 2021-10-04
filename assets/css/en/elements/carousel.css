@@ -177,3 +177,28 @@
   transform: scale(1.06);
   cursor: pointer;
 }
+
+.carousel--dot {
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  margin: 0 4px;
+  opacity: 0.6;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.carousel--dot::after {
+  content: "";
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: block;
+  height: 12px;
+  width: 12px;
+}

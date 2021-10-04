@@ -1,3 +1,9 @@
+@import url("../elements/global.css");
+@import url("../elements/header.css");
+@import url("../elements/footer.css");
+@import url("../elements/carousel.css");
+@import url("./mobile-styles.css");
+
 .blog__container {
   margin: 0 calc(8.4vw - 12px);
 }
