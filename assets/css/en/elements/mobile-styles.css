@@ -42,14 +42,15 @@
   /* Parallax banner */
 
   .text-block.text-block--first {
-    min-height: 240px;
+    width: 90%;
+    padding: 5%;
   }
 
   /* Community */
 
   .community {
-    flex-wrap: wrap;
-    padding: 20px 8.5vw 20px 8.5vw;
+    justify-content: center;
+    padding: 20px 8.5vw 40px 8.5vw;
   }
 
   .community p {
@@ -57,12 +58,13 @@
   }
 
   .community img {
-    max-width: 100%;
+    max-width: 60%;
   }
 
   .community__block {
     display: flex;
     flex-direction: column;
+    padding: 0 20px 0 0;
   }
 
   .community__block h4,
@@ -98,13 +100,12 @@
   /* Gift card */
 
   .gift-card {
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 20px;
   }
 
   .gift-card__top-banner {
-    min-width: auto;
+    min-width: 100%;
   }
 
   .gift-card__bottom-selection {
@@ -112,12 +113,13 @@
   }
 
   button.big-button {
-    min-width: auto;
+    min-width: auto !important;
   }
 
   .gift-card .right,
   .gift-card .left {
-    width: 100%;
+    width: 49%;
+    padding: 0 3rem 0 0;
   }
 
   /* Inpress */
@@ -176,8 +178,8 @@
   }
 
   .header__center a img {
-    width: 80px;
-    height: 25px;
+    width: 144px;
+    height: 35px;
   }
 
   /* Main slider */
@@ -198,6 +200,10 @@
     width: 90%;
     left: 5%;
     right: 5%;
+  }
+
+  .main-slider .text-block--first {
+    width: 100%;
   }
 
   .text-block {
@@ -248,16 +254,10 @@
 
   /* Parallax */
   .parallax {
-    padding-top: 106.1358%;
   }
 
   .main-sale.parallax-banner {
     margin-bottom: 20px;
-  }
-
-  .main-sale .text-block {
-    top: 40%;
-    transform: translate(-50%, -35%);
   }
 
   /* Gift card */
@@ -281,6 +281,7 @@
   .gift-card .right,
   .gift-card .left {
     width: 100%;
+    padding: 0;
   }
 
   /* Favorites */
@@ -318,6 +319,7 @@
 
   .community__block {
     display: flex;
+    padding: 0;
     flex-direction: column;
   }
 
@@ -391,7 +393,7 @@
 
   .footer__top {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .footer__creds {
@@ -470,10 +472,11 @@
     padding-top: 20px;
     padding-bottom: 0px;
   }
-
-  .main-sale .text-block {
-    top: 40%;
-    transform: translate(-50%, -45%);
+  .gift-card__selection-item {
+    margin: 0;
+  }
+  .gift-card__bottom-selection {
+    margin-left: 10px;
   }
 }
 
@@ -510,6 +513,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-sale {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-height: 300px;
+    margin-bottom: 40px;
+  }
+}
+
 /* BLOG */
 
 @media screen and (max-width: 1024px) {
@@ -527,14 +539,71 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .blog__container {
+    margin: 0 8.5vw;
+  }
+
+  .blog__text {
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog__text a {
+    margin: 1rem auto 0 auto;
+  }
+
+  .blog__text h2,
+  .blog__text h4,
+  .blog__text p {
+    text-align: center;
+  }
+
+  .blog__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog__avatar img {
+    max-width: 200px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog__text h2,
+  .blog__text h4,
+  .blog__text p {
+    text-align: left !important;
+  }
+}
+
 /* Product */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1200px) {
+  .product__buttons .product__text {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .breadcrumbs {
     padding: 10px;
     margin: 0;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+
+  .breadcrumbs__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .product {
+    margin-bottom: 32px;
   }
 
   .product__share h2 {
@@ -549,5 +618,76 @@
 
   .product__social-network {
     width: 90px;
+  }
+
+  .product__text {
+    display: none;
+  }
+
+  .product__selection {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .product .gift-card__selection-item {
+    max-width: 50%;
+  }
+
+  .product .gift-card__selection-item img {
+    width: 100%;
+  }
+
+  .product .product__buttons {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product__buttons-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product__buttons-container button {
+    margin: 10px 0;
+  }
+
+  .product__img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .col-md-3.blog__avatar img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .blog__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .product__text {
+    display: block;
+  }
+
+  .product__buttons .product__text {
+    display: none !important;
+  }
+
+  .product__img {
+    order: 1;
+  }
+
+  .product__buttons {
+    order: 2;
+  }
+
+  .product__text {
+    order: 3;
   }
 }

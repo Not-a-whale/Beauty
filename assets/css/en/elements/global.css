@@ -5,8 +5,8 @@
 @import url("../common/bootstrap.css");
 @import url("./fonts.css");
 @import url("./helper-classes.css");
-@import url("./mobile-styles.css");
 @import url("./overlay.css");
+@import url("../elements/mobile-styles.css");
 
 :root {
   --image--popup: url("//cdn.shopify.com/s/files/1/0348/6821/files/Stocksy_txp2f2db77agsj200_Small_3189776_1200x.jpg?v=1591887424");
@@ -102,6 +102,13 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: var(--color-text);
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 h1,

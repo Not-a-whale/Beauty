@@ -6,6 +6,10 @@
   min-height: 50px;
 }
 
+.main_blog__item {
+  max-width: 360px;
+}
+
 .main_blog__row--bottom {
   margin-bottom: 74px;
 }

@@ -1,40 +1,5 @@
-@import url("../elements/global.css");
 @import url("../elements/header.css");
 @import url("../elements/footer.css");
 @import url("../elements/carousel.css");
-@import url("./mobile-styles.css");
-
-.blog__container {
-  margin: 0 calc(8.4vw - 12px);
-}
-
-.blog__heading {
-  margin-top: 74px;
-  margin-bottom: 30px;
-}
-
-.col-md-3.blog__avatar img {
-  max-width: 215px;
-  max-height: 210px;
-}
-
-@media screen and (max-width: 767px) {
-  .col-md-3.blog__avatar img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-
-  .blog__avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-}
-
-.blog__item {
-  padding: 24px;
-  border: 1px solid #e3e6e9;
-  margin-bottom: 30px;
-}
+@import url("../sections/blog_container.css");
+@import url("../elements/global.css");

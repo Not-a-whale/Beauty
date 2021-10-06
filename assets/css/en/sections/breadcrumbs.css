@@ -1,0 +1,22 @@
+.breadcrumbs {
+  margin-top: 80px;
+  margin-bottom: 64px;
+  padding-left: 8.5vw;
+}
+
+.col-12.breadcrumbs__wrapper {
+  display: flex;
+}
+
+.col-12.breadcrumbs__wrapper a {
+  text-decoration: none;
+}
+
+.breadcrums__breadcrumb a {
+  display: flex;
+}
+
+.breadcrums__breadcrumb a span {
+  margin-left: 11px;
+  margin-right: 11px;
+}
