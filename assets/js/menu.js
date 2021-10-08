@@ -1,11 +1,11 @@
 $(document).ready(function() {
     const container = $(".main-menu__container");
     $(".mobile__nav-trigger").click(function() {
-        $(".overlay").toggleClass('overlay-active');
+        $(".overlay--left").toggleClass('overlay-active');
     });
 
     $(".overlay-cross").click(function() {
-        $(".overlay").toggleClass('overlay-active');
+        $(".overlay--left").toggleClass('overlay-active');
     });
 
     $(".dropdown-nav").mouseleave(function() {

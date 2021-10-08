@@ -18,6 +18,7 @@
     <script src="../assets/js/shared/bootstrap.js" defer></script>
     <script src="../assets/js/rtl.js" defer></script>
     <script src="../assets/js/menu.js" defer></script>
+    <script src="../assets/js/shopping_cart.js" defer></script>
 </head>
 <body>
     <header class="header__root">
@@ -295,7 +296,7 @@
         <h2 class="skincare__header carousel__header text-left">You may also like</h2>
         <div class="skincare__slider carousel__slider carousel__slider--desktop">
             <div class="skincare__container carousel__container">
-                <a href="./product" class="skincare__item carousel__item">
+<!--                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
                         <div class="skincare__badge skincare__badge--sale carousel__badge carousel__badge--sale">Sale</div>
                         <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/1.jpg" alt="powder img">
@@ -352,10 +353,10 @@
                     <div class="skincare__price carousel__price">
                         <span>€19,95</span>
                     </div>
-                </a>
+                </a> -->
             </div>
             <div class="skincare__container carousel__container">
-                <a href="./product" class="skincare__item carousel__item">
+<!--                 <a href="./product" class="skincare__item carousel__item">
                     <div class="skincare__img-container carousel__img-container">
                         <div class="skincare__badge skincare__badge--sale carousel__badge--sale">Sale</div>
                         <img loading="lazy" class="skincare__img carousel__img" src="../assets/img/skincare/5.jpg" alt="powder img">
@@ -412,7 +413,7 @@
                     <div class="skincare__price carousel__price">
                         <span>€19,95</span>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
         <div class="skincare__slider carousel__slider carousel__slider--mobile">
@@ -658,7 +659,7 @@
                         <a href="/">Home</a>
                     </li>
                     <li class="main-menu__list-item">
-                        <a>Shop beauty <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                        <a>Shop beauty <img src="../assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                         <ul class="main-menu__submenu main-menu__submenu-1">
                             <li class="main-menu__submenu-item">
                                 <a href="">back<img class="main-menu__chevron-left" src="../assets/img/icon/chevron-right.svg" alt="chevron left"></a>
@@ -775,6 +776,39 @@
             </div>
         </div>
         <div class="overlay-cross">
+            <img src="../assets/img/icon/cross.svg" alt="cross img">
+        </div>
+    </div>
+    <div class="overlay overlay--right">
+        <div class="overlay__shopping-cart">
+            <h2 class="text-center mt-4">Your cart</h2>
+            <div class="shopping-cart__container">
+                <div class="shopping-cart__item">
+                    <h3>bright blush powder</h3>
+                    <div class="shopping-cart__item-block">
+                        <div class="shopping-cart__item-left">
+                            <img src="../assets/img/just_dropped/0/0.jpg" alt="powder">
+                        </div>
+                        <div class="shopping-cart__item-right">
+                            <h4 class="carousel__crossed">$26.00</h4>
+                            <h4 class="carousel__crossed">$26.00</h4>
+                            <p class="text-uppercase">Buy one get one free (-$26.00)</p>
+                            <div class="shopping-cart__plus-minus">
+                                <div class="shopping-cart__minus">&#8722;</div>
+                                <div class="shopping-cart__selection-number">1</div>
+                                <div class="shopping-cart__plus">
+                                    &plus;
+                                </div>
+                            </div>
+                            <a class="shopping-cart__link">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="overlay-cross--right">
             <img src="../assets/img/icon/cross.svg" alt="cross img">
         </div>
     </div>

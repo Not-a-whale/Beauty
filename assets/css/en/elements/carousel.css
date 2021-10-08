@@ -6,6 +6,7 @@
 }
 
 .carousel .carousel__item {
+  width: 25%;
   text-decoration: none;
 }
 
@@ -39,6 +40,7 @@
   display: inline-flex;
   -webkit-user-drag: none;
   user-select: none;
+  width: 100%;
 }
 
 .carousel__img {
@@ -82,8 +84,40 @@
   transition: all 0.3s ease-out;
 }
 
+.carousel__badge--spinner {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 8px;
+  right: 8px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-page-bg);
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carousel__badge--spinner img {
+  width: 200%;
+  border-radius: 50%;
+}
+
 .carousel__badge--plus img {
+  width: 100%;
+  padding: 10%;
+  pointer-events: none;
   transition: transform 0.3s ease-out;
+}
+
+.spinnerGif {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 .carousel__badge--plus:hover img {

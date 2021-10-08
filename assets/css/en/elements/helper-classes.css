@@ -62,12 +62,21 @@
   visibility: visible !important;
 }
 
+.overlay-active .overlay__shopping-cart {
+  right: 0 !important;
+}
+
 .overlay-active .overlay__main-menu {
   left: 0 !important;
 }
 
 .overlay-active .overlay-cross {
   display: block !important;
+}
+
+.overlay-active .overlay-cross--right {
+  display: block;
+  width: 20px;
 }
 
 .isRTL {

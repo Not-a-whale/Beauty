@@ -691,3 +691,9 @@
     order: 3;
   }
 }
+
+@media screen and (min-width: 1441px) {
+  .gift-card {
+    justify-content: space-evenly;
+  }
+}
