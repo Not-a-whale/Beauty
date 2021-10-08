@@ -1,7 +1,11 @@
 $(document).ready(function () {
   var url = window.location.href.split("/");
   isInnerPage = url.length > 4;
-  desktopContainer = Array.from($(".carousel__slider--desktop"));
+  let intViewportWidth = window.innerWidth;
+  desktopContainer =
+    intViewportWidth > 767
+      ? Array.from($(".carousel__slider--desktop"))
+      : Array.from($(".carousel__slider--mobile"));
   // Ajax request to get all the documents
   $.ajax({
     url: !isInnerPage ? "assets/json/items.json" : "../assets/json/items.json",
@@ -11,10 +15,22 @@ $(document).ready(function () {
       for (let j = 0; j < desktopContainer.length; j++) {
         for (let i = 0; i < result.length; i++) {
           carouselElem = returnCarouselItem(result[i]);
-          if (i < 4) {
-            desktopContainer[j].children[0].innerHTML += carouselElem;
+          if (desktopContainer[j].children.length <= 2) {
+            if (i < 4) {
+              desktopContainer[j].children[0].innerHTML += carouselElem;
+            } else {
+              desktopContainer[j].children[1].innerHTML += carouselElem;
+            }
           } else {
-            desktopContainer[j].children[1].innerHTML += carouselElem;
+            if (i < 2) {
+              desktopContainer[j].children[0].innerHTML += carouselElem;
+            } else if (i < 4) {
+              desktopContainer[j].children[1].innerHTML += carouselElem;
+            } else if (i < 6) {
+              desktopContainer[j].children[2].innerHTML += carouselElem;
+            } else if (i < 8) {
+              desktopContainer[j].children[3].innerHTML += carouselElem;
+            }
           }
         }
       }
@@ -41,7 +57,11 @@ $(document).ready(function () {
           const slideImage = slide.querySelector("img");
 
           // disable default image drag
-          slideImage.addEventListener("dragstart", (e) => e.preventDefault());
+          window.innerWidth > 767
+            ? slideImage.addEventListener("dragstart", (e) =>
+                e.preventDefault()
+              )
+            : "";
           // touch events
           slide.addEventListener("touchstart", touchStart(index));
           slide.addEventListener("touchend", touchEnd);
@@ -140,7 +160,7 @@ function returnCarouselItem(result) {
   const salePriceMarkup = `<span class="just-dropped__crossed carousel__crossed">${result.currency}${result.salePrice}</span>`;
   const additionalDot = isInnerPage ? "." : "";
   return `
-  <a href="./products" class="just-dropped__item carousel__item">
+  <a href=".${additionalDot}/products" class="just-dropped__item carousel__item">
   <div class="just-dropped__img-container carousel__img-container">
       ${result.salePrice ? saleBadge : ""}
       <img loading="lazy" class="just-dropped__img carousel__img" src="${additionalDot}${additionalDot}/assets/img/just_dropped/${

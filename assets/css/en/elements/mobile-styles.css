@@ -529,6 +529,14 @@
     left: 5px;
     top: 5px;
   }
+
+  .product-banner {
+    display: none !important;
+  }
+
+  .carousel .carousel__item {
+    width: 50%;
+  }
 }
 
 /* BLOG */
