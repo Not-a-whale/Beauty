@@ -520,6 +520,15 @@
     max-height: 300px;
     margin-bottom: 40px;
   }
+
+  .items-grid .just-dropped__item {
+    max-width: 50%;
+  }
+
+  .carousel__badge--sale {
+    left: 5px;
+    top: 5px;
+  }
 }
 
 /* BLOG */
