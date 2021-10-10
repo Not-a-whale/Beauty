@@ -6,10 +6,12 @@
 
 .product .gift-card__selection-item {
   max-width: 50%;
+  min-width: 33.33%;
 }
 
 .product .gift-card__selection-item img {
   width: 100%;
+  height: 100%;
 }
 
 .product {
@@ -32,12 +34,12 @@
 }
 
 .product .gift-card__selection-item:not(:first-child) {
-  margin-left: 34px;
+  margin-left: 0;
 }
 
 .gift-card__bottom-selection {
   display: flex;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .gift-card__selection-item {
@@ -54,4 +56,17 @@
 
 .product__buttons-container button {
   min-width: 100% !important;
+}
+
+#mainProductImage {
+  transition: 0.3s all;
+}
+
+.product__img,
+.product__img > * {
+  transition: 0.3s all;
+}
+
+.gift-card__selection-item {
+  cursor: pointer;
 }

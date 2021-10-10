@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  var url = window.location.href.split("/");
-  isInnerPage = url.length > 4;
   let intViewportWidth = window.innerWidth;
   desktopContainer =
     intViewportWidth > 767
@@ -8,7 +6,7 @@ $(document).ready(function () {
       : Array.from($(".carousel__slider--mobile"));
   // Ajax request to get all the documents
   $.ajax({
-    url: !isInnerPage ? "assets/json/items.json" : "../assets/json/items.json",
+    url: "assets/json/items.json",
     type: "GET",
     dataType: "json",
     success: function (result) {
@@ -57,11 +55,14 @@ $(document).ready(function () {
           const slideImage = slide.querySelector("img");
 
           // disable default image drag
-          window.innerWidth > 767
-            ? slideImage.addEventListener("dragstart", (e) =>
-                e.preventDefault()
-              )
-            : "";
+          if (slideImage) {
+            window.innerWidth > 767
+              ? slideImage.addEventListener("dragstart", (e) =>
+                  e.preventDefault()
+                )
+              : "";
+          }
+
           // touch events
           slide.addEventListener("touchstart", touchStart(index));
           slide.addEventListener("touchend", touchEnd);
@@ -158,19 +159,20 @@ function returnCarouselItem(result) {
   const saleBadge =
     '<div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>';
   const salePriceMarkup = `<span class="just-dropped__crossed carousel__crossed">${result.currency}${result.salePrice}</span>`;
-  const additionalDot = isInnerPage ? "." : "";
   return `
-  <a href=".${additionalDot}/products" class="just-dropped__item carousel__item">
+  <a href="../../product-en.html/${
+    result.id
+  }" class="just-dropped__item carousel__item">
   <div class="just-dropped__img-container carousel__img-container">
       ${result.salePrice ? saleBadge : ""}
-      <img loading="lazy" class="just-dropped__img carousel__img" src="${additionalDot}${additionalDot}/assets/img/just_dropped/${
-    result.id
-  }/0.jpg" alt="${result.name} img">
+      <img loading="lazy" class="just-dropped__img carousel__img" src="./assets/img/just_dropped/${
+        result.id
+      }/0.jpg" alt="${result.name} img">
       <div class="just-dropped__badge just-dropped__badge--plus carousel__badge--plus" onclick='addToCart(event, ${
         result.id
       })'>
-           <img loading="lazy" src="${additionalDot}./assets/img/icon/plus.svg" class="plusImg" alt="plus"> 
-           <img src="${additionalDot}./assets/img/icon/icons8-iphone-spinner.gif" class="spinnerGif" alt="iphone spinner">
+           <img loading="lazy" src="./assets/img/icon/plus.svg" class="plusImg" alt="plus"> 
+           <img src="./assets/img/icon/icons8-iphone-spinner.gif" class="spinnerGif" alt="iphone spinner">
       </div>
   </div>
   <h4 class="just-dropped__heading carousel__heading">
@@ -183,6 +185,15 @@ function returnCarouselItem(result) {
 </a>
 `;
 }
+
+/* Saving Id to localStorage */
+
+$(document).on("click", "a.carousel__item", function (e, id) {
+  let arr = $(this).attr("href").toString().split("/");
+  let productId = arr[arr.length - 1];
+  localStorage.setItem("productId", productId);
+  $(this).attr("href", "../../product-en.html");
+});
 
 /* animation of clicking on + button and adding a product */
 

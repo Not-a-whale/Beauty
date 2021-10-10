@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="icon" href="./assets/img/sun-icon_50x50.png" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/en/pages/product.css">
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/just_dropped_slider.js" defer></script>
+    <script src="./assets/js/shared/bootstrap.bundle.js" defer></script>
+    <script src="./assets/js/shared/bootstrap.js" defer></script>
+    <script src="./assets/js/rtl.js" defer></script>
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/shopping_cart.js" defer></script>
+    <script src="./assets/js/product-page.js" defer></script>
+</head>
+<body>
+    <header class="header__root">
+        <div class="header__top">
+            <div class="mobile__nav-trigger">
+                <img src="./assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
+            </div>
+            <div class="header__left">
+                <div class="disclosure">
+                    <div class="disclosure__block">
+                        <span class="disclosure__option--current">USD $</span>
+                        <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                    </div>
+                    <ul class="disclosure__list">
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                AUD $
+                            </span>
+                        </li>
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                CAD $
+                            </span>
+                        </li>
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                EUR €
+                            </span>
+                        </li>
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                USD $
+                            </span>
+                        </li>
+                    </ul>
+                    <input type="text" class="disclosure__input">
+                </div>
+                <div class="search-bar">
+                    <img loading="lazy" src="./assets/img/search_icon.svg" alt="search image" class="search-bar__img">
+                </div>
+            </div>
+            <div class="header__center">
+                    <a href="./index-en.html" role="banner" title="Blockshop theme - Beauty">
+                        <img loading="lazy" src="./assets/img/main_logo.png" alt="">
+                    </a>
+            </div>
+            <div class="header__right">
+                <div class="flag flag__desktop">
+                    <div class="flag__options">
+                        <div class="flag__option">
+                            <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
+                            <p>UAE</p>
+                        </div>
+                    </div>
+                    <ul class="flag__list">
+                        <li class="flag__list-item">
+                            <span class="flag__list-option">
+                                UAE
+                            </span>
+                        </li>
+                        <li class="flag__list-item">
+                            <span class="flag__list-option">
+                                US
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logging logging__desktop">
+                    <a href="./login-en.html" class="logging__login">Login</a>
+                    <p class="logging__text">/</p>
+                    <a href="./login-en.html" class="logging__sign-up">Sign up</a>
+                </div>
+                <div class="shopping-cart">
+                    <img loading="lazy" src="./assets/img/shopping_cart_icon.svg" alt="shopping cart icon"
+                        class="shopping-cart__icon">
+                    <span class="shopping-cart__number">
+                        2
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="mobile__nav-trigger">
+                <img src="./assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
+            </div>
+            <div class="logging logging__mobile">
+                <a href="/login" class="logging__login">Login</a>
+                <p class="logging__text">/</p>
+                <a href="/login" class="logging__sign-up">Sign up</a>
+            </div>
+            <nav class="header__desktop-nav">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="/home" class="main-menu__link">home</a>
+                    </li>
+                    <li class="main-menu__item" id="mainMenuDropDownListItem">
+                        <a class="main-menu__link">Shop beauty</a>
+                        <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="/blog" class="main-menu__link">Blog</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="/blog" class="main-menu__link">About us</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="/theme-features" class="main-menu__link">Theme features</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flag__mobile">
+                <div class="flag__options">
+                    <div class="flag__option">
+                        <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
+                        <p>UAE</p>
+                    </div>
+                </div>
+                <ul class="flag__list">
+                    <li class="flag__list-item">
+                        <span class="flag__list-option">
+                            UAE
+                        </span>
+                    </li>
+                    <li class="flag__list-item">
+                        <span class="flag__list-option">
+                            US
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown-nav" id="headerDropdownNav">
+            <nav class="dropdown__wrapper">
+                <div class="dropdown__pick-cards dropdown__item">
+                    <ul class="dropdown__list">
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link">Our pics</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link">Gift cards</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown__shop-types dropdown__item">
+                    <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop by type</a>
+                    <ul class="dropdown__list">
+                        <li class="main-menu__item">
+                            <a href="/collection" class="main-menu__link main-menu__link--small">Shop all</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Skin care</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Make up</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Hair care</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown__shop-edit dropdown__item">
+                    <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop the edit</a>
+                    <ul class="dropdown__list">
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Home beauty
+                                essentials</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Skincare Super
+                                Sellers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown__sale dropdown__item">
+                    <a href="/theme-features" class="main-menu__link main-menu__link--heading">Sale</a>
+                    <ul class="dropdown__list">
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Final
+                                Reductions</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="/theme-features" class="main-menu__link main-menu__link--small">Fragrance
+                                sale</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <h6 class="d-none"></h6>
+        <div class="contianer">
+            <div class="row">
+                <div class="col-12 breadcrumbs__wrapper">
+                    <div class="breadcrums__breadcrumb">
+                        <a href="./index-en.html">Home <span class="slash">/</span></a>
+                    </div>
+                    <div class="breadcrums__breadcrumb">
+                        <a href="./collection-en.html">Products <span class="slash">/</span></a>
+                    </div>
+                    <div class="breadcrums__breadcrumb">
+                        <a href="/" id="productLink">ORSEN Luxe Face Cream</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 product__buttons product__section">
+                    <h2 id="productHeading">
+                        ORSEN Luxe Face Cream
+                    </h2>
+                    <h3 id="priceText">€32,95</h4>
+                    <div class="product__buttons-container">
+                        <button class="big-button big-button--white mb-3">add to cart</button>
+                        <button class="big-button">buy it now</button>
+                    </div>
+                    <div class="gift-card__bottom-selection product__selection">
+                        <div class="gift-card__selection-item circled-gift-card">
+                            <img loading="lazy" src="./assets/img/product/item_1_small.png" alt="item 1 small">
+                        </div>
+                        <div class="gift-card__selection-item">
+                            <img loading="lazy" src="./assets/img/product/item_2_small.png" alt="item 1 small">
+                        </div>
+                    </div>
+                    <div class="product__text .d-none .d-md-block .d-lg-none">
+                        <p class="mb-3 textBlock1">
+                            This is a Beyond Beauty product which means it has been sourced, tried and tested and finally declared one of the most new and innovative heroes out there.
+                        </p>
+                        <p class="mb-3 textBlock2">
+                            ORSEN’s anti-aging Face Cream will keep your skin hydrated and firm throughout the day. When used at night, you awaken to healthy-looking and refreshed skin 24/7. It quickly absorbs into the skin to give your complexion a radiant glow. Skullcap and Purslane are anti-aging powerhouses that help calm the skin and reduce visible signs of irritation.
+                        </p>
+                        <p class="mb-3 textBlock3">
+                            This is a demonstration store. This product, and its image and text, is placeholder only. Images created by Troop Themes
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 product__img product__section d-flex align-items-start justify-content-md-start">
+                    <img loading="lazy" src="./assets/img/product/item_1_big.png" alt="item 1 creme big" id="mainProductImage">
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 product__text product__section">
+                    <p class="mb-3 textBlock1">
+                        This is a Beyond Beauty product which means it has been sourced, tried and tested and finally declared one of the most new and innovative heroes out there.
+                    </p>
+                    <p class="mb-3 textBlock2">
+                        ORSEN’s anti-aging Face Cream will keep your skin hydrated and firm throughout the day. When used at night, you awaken to healthy-looking and refreshed skin 24/7. It quickly absorbs into the skin to give your complexion a radiant glow. Skullcap and Purslane are anti-aging powerhouses that help calm the skin and reduce visible signs of irritation.
+                    </p>
+                    <p class="mb-3 textBlock3">
+                        This is a demonstration store. This product, and its image and text, is placeholder only. Images created by Troop Themes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product__share">
+        <h2>Share this</h2>
+        <div class="product__social-networks">
+            <a href="http://www.twitter.com" class="product__social-network">
+                <img loading="lazy" src="./assets/img/twitter.svg" alt="twitter icon">
+                <h4>Tweet</h4>
+            </a>
+            <a href="http://www.facebook.com" class="product__social-network product__social-network--facebook">
+                <img loading="lazy" src="./assets/img/facebook.svg" alt="facebook icon">
+                <h4>Like</h4>
+            </a>
+            <a href="http://www.twitter.com" class="product__social-network">
+                <img loading="lazy" src="./assets/img/icon/pinterest.svg" alt="pinterest icon">
+                <h4>Tweet</h4>
+            </a>
+        </div>
+    </section>
+    <section class="skincare carousel">
+        <h2 class="skincare__header carousel__header text-left">You may also like</h2>
+        <div class="skincare__slider carousel__slider carousel__slider--desktop">
+            <div class="skincare__container carousel__container">
+<!--                 <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <div class="skincare__badge skincare__badge--sale carousel__badge carousel__badge--sale">Sale</div>
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/1.jpg" alt="powder img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Microhabitat Rejuvenating mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span class="skincare__crossed carousel__crossed">€32,95</span>
+                        <span>€21,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/2.jpg" alt="mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Conditioning mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/3.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Microhabitat Rejuvenating mask
+                    </h4> 
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/4.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Oat and juniper hand cream
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€19,95</span>
+                    </div>
+                </a> -->
+            </div>
+            <div class="skincare__container carousel__container">
+<!--                 <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <div class="skincare__badge skincare__badge--sale carousel__badge--sale">Sale</div>
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/5.jpg" alt="powder img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Bright Blush Powder
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span class="skincare__crossed carousel__crossed">€32,95</span>
+                        <span>€21,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/6.jpg" alt="mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Conditioning mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/7.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Microhabitat Rejuvenating mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/8.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Oat and juniper hand cream
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€19,95</span>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+        <div class="skincare__slider carousel__slider carousel__slider--mobile">
+            <div class="skincare__container carousel__container">
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <div class="skincare__badge skincare__badge--sale carousel__badge carousel__badge--sale">Sale</div>
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/1.jpg" alt="powder img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Microhabitat Rejuvenating mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span class="skincare__crossed carousel__crossed">€32,95</span>
+                        <span>€21,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/2.jpg" alt="mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Conditioning mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+            </div>
+            <div class="skincare__container carousel__container">
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <div class="skincare__badge skincare__badge--sale carousel__badge--sale">Sale</div>
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/5.jpg" alt="powder img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Bright Blush Powder
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span class="skincare__crossed carousel__crossed">€32,95</span>
+                        <span>€21,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/6.jpg" alt="mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Conditioning mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+            </div>
+            <div class="skincare__container carousel__container">
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/7.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Microhabitat Rejuvenating mask
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/8.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Oat and juniper hand cream
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€19,95</span>
+                    </div>
+                </a>
+            </div>
+            <div class="skincare__container carousel__container">
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/3.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Microhabitat Rejuvenating mask
+                    </h4> 
+                    <div class="skincare__price carousel__price">
+                        <span>€16,95</span>
+                    </div>
+                </a>
+                <a href="./product" class="skincare__item carousel__item">
+                    <div class="skincare__img-container carousel__img-container">
+                        <img loading="lazy" class="skincare__img carousel__img" src="./assets/img/skincare/4.jpg" alt="rejuvenating mask img">
+                        <div class="skincare__badge skincare__badge--plus carousel__badge--plus">
+                            <img loading="lazy" src="./assets/img/icon/plus.svg" alt="plus">
+                        </div>
+                    </div>
+                    <h4 class="skincare__heading carousel__heading">
+                        Oat and juniper hand cream
+                    </h4>
+                    <div class="skincare__price carousel__price">
+                        <span>€19,95</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__creds">
+                    <h3 class="footer__heading">Beauty store</h3>
+                    <p class="footer-__copyright">&#169; 2020 Troop Themes</p>
+                    <p>Built exclusively for Shopify's theme store</p>
+                    <div class="footer__links-block">
+                        <a href="http://www.facebook.com" class="footer__link footer__link--pic">
+                            <img loading="lazy" src="./assets/img/facebook.svg" alt="facebook pic">
+                        </a>
+                        <a href="http://www.twitter.com" class="footer__link footer__link--pic">
+                            <img loading="lazy" src="./assets/img/twitter.svg" alt="twitter pic">
+                        </a>
+                        <a href="http://www.instagram.com" class="footer__link footer__link--pic">
+                            <img loading="lazy" src="./assets/img/instagram.svg" alt="instagram pic">
+                        </a>
+                        <a href="http://www.youtube.com" class="footer__link footer__link--pic">
+                            <img loading="lazy" src="./assets/img/youtube.svg" alt="youtube pic">
+                        </a>
+                    </div>
+                    <div class="disclosure">
+                        <div class="disclosure__block">
+                            <span class="disclosure__option--current">USD $</span>
+                            <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                        </div>
+                        <ul class="disclosure__list">
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    AUD $
+                                </span>
+                            </li>
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    CAD $
+                                </span>
+                            </li>
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    EUR €
+                                </span>
+                            </li>
+                            <li class="disclosure__list-item">
+                                <span class="disclosure__option">
+                                    USD $
+                                </span>
+                            </li>
+                        </ul>
+                        <input type="text" class="disclosure__input">
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <h3 class="footer__heading">info</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="/about" class="footer__link">About us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="/approach" class="footer__link">Our Approach</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="/contact" class="footer__link">Contact</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="/faq" class="footer__link">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__subscription">
+                    <h3 class="footer__heading">subscribe</h3>
+                    <p class="footer-__copyright">&#169; 2020 Troop Themes</p>
+                    <p>Sign up to our emails for VIP offers and new product offers</p>
+                    <form method="POST" accept-charset="UTF-8" action="/contact#footerForm" id="footerForm"
+                        class="footer__form">
+                        <input type="email" id="footerEmail" placeholder="Your Email" name="contact[email]"
+                            class="footer__input">
+                        <button type="submit" value="Ok" class="footer__button medium-button">Ok</button>
+                    </form>
+                    <div class="payment-icons__block">
+                        <ul class="payment-icons__list">
+                            <li class="payment-icons__list-item">
+                                <img loading="lazy" src="./assets/img/visa.svg" alt="visa pic">
+                            </li>
+                            <li class="payment-icons__list-item">
+                                <img loading="lazy" src="./assets/img/mastercard.svg" alt="mastercard pic">
+                            </li>
+                            <li class="payment-icons__list-item">
+                                <img loading="lazy" src="./assets/img/amex.svg" alt="amex pic">
+                            </li>
+                            <li class="payment-icons__list-item">
+                                <img loading="lazy" src="./assets/img/paypal.svg" alt="paypal pic">
+                            </li>
+                            <li class="payment-icons__list-item">
+                                <img loading="lazy" src="./assets/img/diners-club.svg" alt="diners-club pic">
+                            </li>
+                            <li class="payment-icons__list-item">
+                                <img loading="lazy" src="./assets/img/discover.svg" alt="discover pic">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay overlay--left">
+        <div class="overlay__main-menu">
+            <div class="main-menu__top">
+                <a href="" class="main-menu__header-link">Search</a>
+                <a href="" class="main-menu__header-link">View account</a>
+            </div>
+            <div class="main-menu__container">
+                <ul id="firstList" class="main-menu__list">
+                    <li class="main-menu__list-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a>Shop beauty <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                        <ul class="main-menu__submenu main-menu__submenu-1">
+                            <li class="main-menu__submenu-item">
+                                <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                            </li>
+                            <li class="main-menu__submenu-item">
+                                <a href="/blog">Shop beauty</a>
+                            </li>
+                            <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                <a href="/blog">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <ul class="main-menu__submenu main-menu__submenu-2">
+                                    <li class="main-menu__submenu-item">
+                                        <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                    </li>
+                                    <li class="main-menu__submenu-item">
+                                        <a href="/blog">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Shop All</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Skin Care</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Make up</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Hair care</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                <a href="/blog">Shop the edit <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <ul class="main-menu__submenu main-menu__submenu-2">
+                                    <li class="main-menu__submenu-item">
+                                        <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                    </li>
+                                    <li class="main-menu__submenu-item">
+                                        <a href="/blog">Shop the edit</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Shop All</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Skin Care</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Make up</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                <a href="/blog">Sale <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <ul class="main-menu__submenu main-menu__submenu-2">
+                                    <li class="main-menu__submenu-item">
+                                        <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                    </li>
+                                    <li class="main-menu__submenu-item">
+                                        <a href="/blog">Final reductions</a>
+                                    </li>
+                                    <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                        <a href="/blog">Fragrance sale</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                <a href="/blog">our pics</a>
+                            </li>
+                            <li class="main-menu__submenu-item main-menu__submenu-item--inside">
+                                <a href="/blog">gift cards</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a href="/about">about</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a href="/theme-features">Theme features</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-menu__bottom">
+                <div class="disclosure">
+                    <div class="disclosure__block">
+                        <span class="disclosure__option--current"><p class="currency_en"></p>USD</p> $</span>
+                        <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                    </div>
+                    <ul class="disclosure__list">
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                <p class="currency_en"></p>AUD</p> <p class="currency_number_en">$</p>
+                            </span>
+                        </li>
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                <p class="currency_en"></p>CAD</p> <p class="currency_number_en">$</p>
+                            </span>
+                        </li>
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                <p class="currency_en"></p>EUR</p> <p class="currency_number_en">€</p>
+                            </span>
+                        </li>
+                        <li class="disclosure__list-item">
+                            <span class="disclosure__option">
+                                <p class="currency_en"></p>USD</p> <p class="currency_number_en">$</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <input type="text" class="disclosure__input">
+                </div>
+            </div>
+        </div>
+        <div class="overlay-cross">
+            <img src="./assets/img/icon/cross.svg" alt="cross img">
+        </div>
+    </div>
+    <div class="overlay overlay--right">
+        <div class="overlay__shopping-cart">
+            <h2 class="text-center mt-4">Your cart</h2>
+            <div class="shopping-cart__container">
+                <div class="shopping-cart__item">
+                    <h3>bright blush powder</h3>
+                    <div class="shopping-cart__item-block">
+                        <div class="shopping-cart__item-left">
+                            <img src="./assets/img/just_dropped/0/0.jpg" alt="powder">
+                        </div>
+                        <div class="shopping-cart__item-right">
+                            <h4 class="carousel__crossed">$26.00</h4>
+                            <h4 class="carousel__crossed">$26.00</h4>
+                            <p class="text-uppercase">Buy one get one free (-$26.00)</p>
+                            <div class="shopping-cart__plus-minus">
+                                <div class="shopping-cart__minus">&#8722;</div>
+                                <div class="shopping-cart__selection-number">1</div>
+                                <div class="shopping-cart__plus">
+                                    &plus;
+                                </div>
+                            </div>
+                            <a class="shopping-cart__link">Remove</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="overlay-cross--right">
+            <img src="./assets/img/icon/cross.svg" alt="cross img">
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script> 
+</body>
+</html>
