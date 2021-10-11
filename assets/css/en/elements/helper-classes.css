@@ -1,5 +1,5 @@
 .display {
-  display: block;
+  display: block !important;
 }
 
 .opacity0 {
