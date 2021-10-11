@@ -77,3 +77,8 @@ footer {
 .footer__list-item a {
   text-transform: capitalize;
 }
+
+.main-footer .disclosure__list {
+  bottom: 105%;
+  top: initial;
+}
