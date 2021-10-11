@@ -90,3 +90,7 @@
 .overlay__main-menu.isRTL {
   right: 0 !important;
 }
+
+.display-flex {
+  display: flex !important;
+}

@@ -1,38 +1,56 @@
 $(document).ready(function () {
-  let intViewportWidth = window.innerWidth;
-  desktopContainer =
-    intViewportWidth > 767
-      ? Array.from($(".carousel__slider--desktop"))
-      : Array.from($(".carousel__slider--mobile"));
+  sliderContainer = {
+    carouselMobileChildren: $(".carousel__slider--mobile").children(),
+    carouselDesktopChildren: $(".carousel__slider--desktop").children(),
+  };
   // Ajax request to get all the documents
   $.ajax({
     url: "assets/json/items.json",
     type: "GET",
     dataType: "json",
     success: function (result) {
-      for (let j = 0; j < desktopContainer.length; j++) {
-        for (let i = 0; i < result.length; i++) {
-          carouselElem = returnCarouselItem(result[i]);
-          if (desktopContainer[j].children.length <= 2) {
-            if (i < 4) {
-              desktopContainer[j].children[0].innerHTML += carouselElem;
-            } else {
-              desktopContainer[j].children[1].innerHTML += carouselElem;
+      for (let i = 0; i < result.length; i++) {
+        for (
+          let j = 0;
+          j < sliderContainer.carouselDesktopChildren.length;
+          j++
+        ) {
+          if (i < 4) {
+            if (j % 2 === 0) {
+              sliderContainer.carouselDesktopChildren[j].innerHTML +=
+                returnCarouselItem(result[i]);
             }
-          } else {
-            if (i < 2) {
-              desktopContainer[j].children[0].innerHTML += carouselElem;
-            } else if (i < 4) {
-              desktopContainer[j].children[1].innerHTML += carouselElem;
-            } else if (i < 6) {
-              desktopContainer[j].children[2].innerHTML += carouselElem;
-            } else if (i < 8) {
-              desktopContainer[j].children[3].innerHTML += carouselElem;
+          } else if ((i) => 4) {
+            if (j % 2 !== 0) {
+              sliderContainer.carouselDesktopChildren[j].innerHTML +=
+                returnCarouselItem(result[i]);
             }
           }
         }
+        for (
+          let k = 0;
+          k < sliderContainer.carouselMobileChildren.length;
+          k++
+        ) {
+          if (i < 2) {
+            sliderContainer.carouselMobileChildren[0].innerHTML +=
+              returnCarouselItem(result[i]);
+            break;
+          } else if (i < 4) {
+            sliderContainer.carouselMobileChildren[1].innerHTML +=
+              returnCarouselItem(result[i]);
+            break;
+          } else if (i < 6) {
+            sliderContainer.carouselMobileChildren[2].innerHTML +=
+              returnCarouselItem(result[i]);
+            break;
+          } else if (i < 8) {
+            sliderContainer.carouselMobileChildren[3].innerHTML +=
+              returnCarouselItem(result[i]);
+            break;
+          }
+        }
       }
-
       // get our elements
       document.querySelectorAll(".carousel__slider").forEach((slider) => {
         const slides = Array.from(

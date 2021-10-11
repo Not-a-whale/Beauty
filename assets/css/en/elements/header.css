@@ -100,6 +100,25 @@
 
 .disclosure__list {
   display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  top: 105%;
+  width: 100%;
+  left: 0;
+  border: 1px solid #e3e6e9;
+  transition: 0.3s all;
+}
+
+.disclosure__list-item {
+  width: 100%;
+  padding: 10px;
+  background: white;
+}
+
+.disclosure__list-item:hover {
+  background: var(--color-tabs-accordions);
 }
 
 .disclosure__input {
