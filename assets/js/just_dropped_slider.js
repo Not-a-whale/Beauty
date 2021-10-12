@@ -35,17 +35,25 @@ $(document).ready(function () {
           if (i < 2) {
             sliderContainer.carouselMobileChildren[0].innerHTML +=
               returnCarouselItem(result[i]);
+            sliderContainer.carouselMobileChildren[4].innerHTML +=
+              returnCarouselItem(result[i]);
             break;
           } else if (i < 4) {
             sliderContainer.carouselMobileChildren[1].innerHTML +=
+              returnCarouselItem(result[i]);
+            sliderContainer.carouselMobileChildren[5].innerHTML +=
               returnCarouselItem(result[i]);
             break;
           } else if (i < 6) {
             sliderContainer.carouselMobileChildren[2].innerHTML +=
               returnCarouselItem(result[i]);
+            sliderContainer.carouselMobileChildren[6].innerHTML +=
+              returnCarouselItem(result[i]);
             break;
           } else if (i < 8) {
             sliderContainer.carouselMobileChildren[3].innerHTML +=
+              returnCarouselItem(result[i]);
+            sliderContainer.carouselMobileChildren[7].innerHTML +=
               returnCarouselItem(result[i]);
             break;
           }

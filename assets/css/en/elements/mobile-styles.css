@@ -681,6 +681,11 @@
     margin-bottom: 10px;
   }
 
+  .main-footer .disclosure__list {
+    top: 105%;
+    bottom: initial;
+  }
+
   .blog__avatar {
     display: flex;
     align-items: center;
