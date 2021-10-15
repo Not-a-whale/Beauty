@@ -102,5 +102,31 @@
             "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
         },
         "img_links": ["assets/img/just_dropped/7/0.jpg", "assets/img/just_dropped/7/1.jpg"]
+    },
+    {
+        "id": 7,
+        "name": "Base Concealer",
+        "price": "15.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/7/0.jpg", "assets/img/just_dropped/7/1.jpg"]
+    },
+    {
+        "id": 6,
+        "name": "Base Concealer",
+        "price": "20.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/6/0.jpg", "assets/img/just_dropped/6/1.jpg"]
     }
 ]

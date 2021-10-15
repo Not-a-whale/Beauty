@@ -125,3 +125,19 @@ h2.text-block__heading {
 
 .main-sale__parallax {
 }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pagination > .disclosure {
+  max-width: 80px;
+}
+
+.pages {
+  max-width: 200px !important;
+}

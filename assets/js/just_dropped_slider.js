@@ -1,7 +1,7 @@
 $(document).ready(function () {
   sliderContainer = {
-    carouselMobileChildren: $(".carousel__slider--mobile").children(),
-    carouselDesktopChildren: $(".carousel__slider--desktop").children(),
+    carouselMobileChildren: $(".carousel__slider--mobile"),
+    carouselDesktopChildren: $(".carousel__slider--desktop"),
   };
   // Ajax request to get all the documents
   $.ajax({
@@ -9,54 +9,41 @@ $(document).ready(function () {
     type: "GET",
     dataType: "json",
     success: function (result) {
+      const carouselMarkup = '<div class="carousel__container"></div>';
       for (let i = 0; i < result.length; i++) {
         for (
           let j = 0;
           j < sliderContainer.carouselDesktopChildren.length;
           j++
         ) {
-          if (i < 4) {
-            if (j % 2 === 0) {
-              sliderContainer.carouselDesktopChildren[j].innerHTML +=
-                returnCarouselItem(result[i]);
-            }
-          } else if ((i) => 4) {
-            if (j % 2 !== 0) {
-              sliderContainer.carouselDesktopChildren[j].innerHTML +=
-                returnCarouselItem(result[i]);
-            }
+          if (i === 0) {
+            sliderContainer.carouselDesktopChildren[j].innerHTML +=
+              carouselMarkup;
+          } else if (i % 4 === 0) {
+            sliderContainer.carouselDesktopChildren[j].innerHTML +=
+              carouselMarkup;
           }
+          $(
+            ".carousel__container",
+            sliderContainer.carouselDesktopChildren[j]
+          ).last()[0].innerHTML += returnCarouselItem(result[i]);
         }
         for (
           let k = 0;
           k < sliderContainer.carouselMobileChildren.length;
           k++
         ) {
-          if (i < 2) {
-            sliderContainer.carouselMobileChildren[0].innerHTML +=
-              returnCarouselItem(result[i]);
-            sliderContainer.carouselMobileChildren[4].innerHTML +=
-              returnCarouselItem(result[i]);
-            break;
-          } else if (i < 4) {
-            sliderContainer.carouselMobileChildren[1].innerHTML +=
-              returnCarouselItem(result[i]);
-            sliderContainer.carouselMobileChildren[5].innerHTML +=
-              returnCarouselItem(result[i]);
-            break;
-          } else if (i < 6) {
-            sliderContainer.carouselMobileChildren[2].innerHTML +=
-              returnCarouselItem(result[i]);
-            sliderContainer.carouselMobileChildren[6].innerHTML +=
-              returnCarouselItem(result[i]);
-            break;
-          } else if (i < 8) {
-            sliderContainer.carouselMobileChildren[3].innerHTML +=
-              returnCarouselItem(result[i]);
-            sliderContainer.carouselMobileChildren[7].innerHTML +=
-              returnCarouselItem(result[i]);
-            break;
+          if (i === 0) {
+            sliderContainer.carouselMobileChildren[k].innerHTML +=
+              carouselMarkup;
+          } else if (i % 2 === 0) {
+            sliderContainer.carouselMobileChildren[k].innerHTML +=
+              carouselMarkup;
           }
+          $(
+            ".carousel__container",
+            sliderContainer.carouselMobileChildren[k]
+          ).last()[0].innerHTML += returnCarouselItem(result[i]);
         }
       }
       // get our elements

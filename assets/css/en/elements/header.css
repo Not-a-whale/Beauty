@@ -109,6 +109,7 @@
   left: 0;
   border: 1px solid #e3e6e9;
   transition: 0.3s all;
+  z-index: 20;
 }
 
 .disclosure__list-item {
