@@ -171,13 +171,14 @@ $(document).ready(function () {
 function returnCarouselItem(result) {
   const saleBadge =
     '<div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>';
-  const salePriceMarkup = `<span class="just-dropped__crossed carousel__crossed">${result.currency}${result.salePrice}</span>`;
+  const salePriceMarkup = `<span class="just-dropped__crossed carousel__crossed">${result.currency}${result.price_discount}</span>`;
+
   return `
   <a href="../../product-en.html/${
     result.id
   }" class="just-dropped__item carousel__item">
   <div class="just-dropped__img-container carousel__img-container">
-      ${result.salePrice ? saleBadge : ""}
+      ${result.price_discount ? saleBadge : ""}
       <img loading="lazy" class="just-dropped__img carousel__img" src="./assets/img/just_dropped/${
         result.id
       }/0.jpg" alt="${result.name} img">
@@ -192,7 +193,7 @@ function returnCarouselItem(result) {
       ${result.name}
   </h4>
   <div class="just-dropped__price carousel__price">
-      ${result.salePrice ? salePriceMarkup : ""}
+      ${result.price_discount ? salePriceMarkup : ""}
       <span>${result.currency}${result.price}</span>
   </div>
 </a>

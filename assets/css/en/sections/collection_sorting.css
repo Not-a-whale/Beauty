@@ -139,5 +139,39 @@ h2.text-block__heading {
 }
 
 .pages {
-  max-width: 200px !important;
+  max-width: 300px !important;
+}
+
+.pages__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  justify-content: space-around;
+}
+
+.pages__list li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: var(--color-button-bg);
+  border-radius: 4px;
+  margin: 0 5px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.pages__list li:first-child a {
+  border-radius: 20px 0 0 20px;
+}
+
+.pages__list li:last-child a {
+  border-radius: 0 20px 20px 0;
+}
+
+.pages__list li a:hover {
+  background-color: var(--color-header-bg);
+  cursor: pointer;
+  transition: 0.3s;
 }

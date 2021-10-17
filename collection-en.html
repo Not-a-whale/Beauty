@@ -236,10 +236,10 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row" id="productsRowContainer">
+            <div class="row productsContainer" id="productsRowContainer-1">
             </div>
-            <div class="row pagination">
-                <div class="disclosure">
+            <div class="pagination mt-4">
+                <div class="disclosure" id="paginatorDropdown">
                     <div class="disclosure__block">
                         <span class="disclosure__option--current">10</span>
                         <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
@@ -263,7 +263,12 @@
                     </ul>
                     <input type="text" class="disclosure__input">
                 </div>
-                <div class="pages">Those are the pages</div>
+                <div class="pages">
+                    <ul class="pages__list" id="pagesList">
+                        <li class="prev__list-item"><a><</a></li>
+                        <li class="next__list-item"><a>></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

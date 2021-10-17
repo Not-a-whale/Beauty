@@ -1,34 +1,180 @@
+/* This pagination code created with an idea of being multifunctional and reusable. It is easily adjustable to different kinds of 
+projects that still utilize jquery */
+
+let dataCollection;
+const paginator = $("#paginatorDropdown");
+let container = $(".productsContainer");
+
 $.ajax({
   url: "assets/json/items.json",
   type: "GET",
   dataType: "json",
   success: function (result) {
-    const container = $("#productsRowContainer");
-    console.log(container);
-    for (let i = 0; i < result.length; i++) {
-      container.append(returnCarouselItem(result[i]));
-      if (i === result.length - 1) {
-        if (i % 4 === 0) {
-          $(".just-dropped__item")[i - 1].classList.add("last-one");
-        } else {
-          $(".just-dropped__item")[i].classList.add("last-one");
-        }
-      }
-    }
-    $(".just-dropped__item", container)
-      .addClass("col-lg-3")
-      .addClass("col-md-6")
-      .addClass("col-sm-6")
-      .addClass("my-4");
-    returnBanner();
+    let limit = returnPaginatorValue();
+    renderCollectionItems(limit, result);
+    renderPagination(result.length);
+    hideRows();
   },
-});
+}).then((data) => (dataCollection = data));
 
 function returnBanner() {
   const last = $(".last-one");
-  console.log(last);
   const markup = `<a href="./collection" class="just-dropped__item carousel__item col-lg-6 col-md-6 col-sm-6 my-4 product-banner">
   <img loading="lazy" src="./assets/img/banner-collection.png" alt="banner collection img" class="h-100">
 </a>`;
   last.before(last, markup);
+}
+
+function returnPaginatorValue() {
+  return +$(".disclosure__option--current", paginator)[0].innerHTML;
+}
+
+function renderCollectionItems(limit, result, chunks) {
+  // 1) Splitting array into chunks based on the limit
+  let contentChunks = chunks
+    ? chunks
+    : splitArrayIntoChunksOfLen(result, limit);
+  console.log(contentChunks);
+  // 2) Looping through each chunk, diplaying all it's contents
+  contentChunks.forEach((chunk, countElements) => {
+    // 3) If there is a overflow of the current block, create a new one and fill it with the next chunk of data
+    if (countElements > 0) {
+      container[container.length - 1].insertAdjacentHTML(
+        "afterend",
+        `<div class="row productsContainer" id="productsRowContainer-${
+          countElements + 1
+        }"></div>`
+      );
+    }
+    // 4) We are filling every LAST row element with the LAST chunk of data
+    let lastContainer =
+      $(".productsContainer")[$(".productsContainer").length - 1];
+    // 5) Actually looping through all the items and filling the cunks
+    for (let i = 0; i < chunk.length; i++) {
+      console.log(chunk);
+      if (result[i]) {
+        lastContainer.innerHTML += returnCarouselItem(chunk[i]);
+        if (i === limit - 1) {
+          if (i % 4 === 0) {
+            $(".just-dropped__item", lastContainer)[i - 1].classList.add(
+              "last-one"
+            );
+          } else {
+            $(".just-dropped__item", lastContainer)[i].classList.add(
+              "last-one"
+            );
+          }
+        }
+      } else {
+        break;
+      }
+    }
+  });
+  // 6) adding approprite classes
+  $(".just-dropped__item")
+    .addClass("col-lg-3")
+    .addClass("col-md-6")
+    .addClass("col-sm-6")
+    .addClass("my-4");
+  returnBanner();
+}
+
+// Splits the whole array into chunks
+function splitArrayIntoChunksOfLen(arr, len) {
+  var chunks = [],
+    i = 0,
+    n = arr.length;
+  while (i < n) {
+    chunks.push(arr.slice(i, (i += len)));
+  }
+  return chunks;
+}
+
+// Returns pagination with the appropriate amount on pages
+function renderPagination(count) {
+  let pagesLimit = returnPagesLimit(count);
+  hideOrShowPagination(pagesLimit);
+  for (let i = 0; i < pagesLimit; i++) {
+    $(".next__list-item").before(
+      `<li class="pages__list-item"><a>${i + 1}</a></li>`
+    );
+    if (i === 0) {
+      $(".pages__list-item > a")[0].classList.add("active-pagination-button");
+    }
+  }
+  $(".pages__list-item").on("click", (e) => {
+    switchPage(e);
+  });
+}
+
+// Returns a number of chunks or items that need to be paginated to
+function returnPagesLimit(count) {
+  let limit = returnPaginatorValue();
+  let pagesLimit = Math.ceil(count / limit);
+  return pagesLimit;
+}
+
+// Changing the on the limit of items dropdown
+$(".disclosure__list-item").on("click", function () {
+  let limit = returnPaginatorValue();
+  for (let i = 0; i < $(".productsContainer").length; i++) {
+    if (i > 0) {
+      $(".productsContainer")[i].remove();
+    }
+  }
+  container = $(".productsContainer");
+  $(container).empty().show();
+  if ($(".pages__list-item > a").length === 0) {
+    renderPagination(dataCollection.length);
+  }
+  hideOrShowPagination(returnPagesLimit(dataCollection.length));
+  renderCollectionItems(limit, dataCollection);
+  hideRows();
+  Array.from($(".pages__list-item > a")).forEach((link) => {
+    link.classList.remove("active-pagination-button");
+  });
+  $(".pages__list-item > a")[0].classList.add("active-pagination-button");
+});
+
+// Gets data from the paginator about the active chunk and hides all the other ones
+
+function hideRows() {
+  let activeElem = getCurrentPagination();
+  Array.from($(".productsContainer")).forEach((container) => {
+    if (!$(container).is("#productsRowContainer-1")) {
+      $(container).hide();
+    }
+  });
+}
+
+// Gets data from Paginator
+
+function getCurrentPagination() {
+  return $(".active-pagination-button");
+}
+
+function switchPage(e) {
+  const containers = $(".productsContainer");
+  $(".pages__list-item > a").removeClass("active-pagination-button");
+  e.target.classList.add("active-pagination-button");
+  let activePageIndex = +getCurrentPagination()[0].innerHTML;
+  Array.from(containers).forEach((container, index) => {
+    $(container).hide();
+    if (index + 1 === activePageIndex) {
+      $(container).show();
+    }
+  });
+  const containerIDs = Array.from(
+    $(".productsContainer").map((index, item) => {
+      return +item.id.split("-")[1];
+    })
+  );
+}
+
+function hideOrShowPagination(pagesLimit) {
+  if (pagesLimit < 2) {
+    $("#pagesList").hide();
+  } else {
+    $("#pagesList").show();
+  }
 }

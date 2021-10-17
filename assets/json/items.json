@@ -128,5 +128,18 @@
             "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
         },
         "img_links": ["assets/img/just_dropped/6/0.jpg", "assets/img/just_dropped/6/1.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Oat and juniper hand cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/5/0.jpg", "assets/img/just_dropped/5/1.jpg", "assets/img/just_dropped/5/2.jpg"]
     }
 ]
