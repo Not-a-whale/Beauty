@@ -18,6 +18,10 @@
     display: block;
   }
 
+  .collection__banner ~ .breadcrumbs {
+    padding-left: 9.5vw;
+  }
+
   .header__bottom {
     justify-content: space-between;
     padding-left: 8.5%;
@@ -492,7 +496,7 @@
 
 @media screen and (max-width: 1024px) {
   .items-grid {
-    padding: 8.5vw;
+    padding: 20px 8.5vw;
   }
 
   .sorting {
@@ -526,8 +530,8 @@
   }
 
   .carousel__badge--sale {
-    left: 5px;
-    top: 5px;
+    left: 10px;
+    top: 10px;
   }
 
   .product-banner {
