@@ -141,5 +141,291 @@
             "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
         },
         "img_links": ["assets/img/just_dropped/5/0.jpg", "assets/img/just_dropped/5/1.jpg", "assets/img/just_dropped/5/2.jpg"]
+    },
+    {
+        "id": 0,
+        "name": "Bright Blush Powder",
+        "price": "21.95",
+        "price_discount": "32.95",
+        "currency": "€",
+        "description": {
+            "description_1": "Sheer and buildable, 'Free Soul' is a pale-pink powder that's infused with light-catching particles to give you a natural glow. Natural, healthy-looking colour that immediately enlivens the complexion. A light application of even the highest-intensity hues delivers a natural-looking flush.",
+            "description_2": "Instructions for use: <br> Smile and gently swirl color over the cheekbones. For an all-over glow, lightly dust powder wherever the sun hits your face.",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only."    
+        },
+        "img_links": ["assets/img/just_dropped/0/0.jpg", "assets/img/just_dropped/0/1.jpg"]
+    },
+    {
+        "id": 1,
+        "name": "Luxe Face Cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "This is a Beyond Beauty product which means it has been sourced, tried and tested and finally declared one of the most new and innovative heroes out there.",
+            "description_2": "ORSEN's anti-aging Face Cream will keep your skin hydrated and firm throughout the day. When used at night, you awaken to healthy-looking and refreshed skin 24/7. It quickly absorbs into the skin to give your complexion a radiant glow. Skullcap and Purslane are anti-aging powerhouses that help calm the skin and reduce visible signs of irritation.",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/1/0.jpg", "assets/img/just_dropped/1/1.jpg"]
+    },
+    {
+        "id": 2,
+        "name": "Astro Space Lipstick",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Triple Luxe formula is long lasting, natural and moisturising. Enriched with Avocado, Jojoba Oils and Vitamins C and E, it provides deep hydration while creating a barrier to lock in moisture. It also works to reduce the appearance of fine lines and wrinkles, for a smooth and supple smile.",
+            "description_2": "Instructions for use: Smile and gently swirl color over the cheekbones. Apply directly to lips from the bullet or with a lip. Glide onto the heart of lips, working outward towards the corners.",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/2/0.jpg", "assets/img/just_dropped/2/1.jpg", "assets/img/just_dropped/2/2.jpg"]
+    },
+    {
+        "id": 3,
+        "name": "Sera perfume",
+        "price": "65.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/3/0.jpg", "assets/img/just_dropped/3/1.jpg", "assets/img/just_dropped/3/2.jpg"]
+    },
+    {
+        "id": 4,
+        "name": "Bloom No.2",
+        "price": "65.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/4/0.jpg", "assets/img/just_dropped/4/1.jpg", "assets/img/just_dropped/4/2.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Oat and juniper hand cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/5/0.jpg", "assets/img/just_dropped/5/1.jpg", "assets/img/just_dropped/5/2.jpg"]
+    },
+    {
+        "id": 6,
+        "name": "Base Concealer",
+        "price": "20.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/6/0.jpg", "assets/img/just_dropped/6/1.jpg"]
+    },
+    {
+        "id": 7,
+        "name": "Base Concealer",
+        "price": "15.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/7/0.jpg", "assets/img/just_dropped/7/1.jpg"]
+    },
+    {
+        "id": 7,
+        "name": "Base Concealer",
+        "price": "15.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/7/0.jpg", "assets/img/just_dropped/7/1.jpg"]
+    },
+    {
+        "id": 6,
+        "name": "Base Concealer",
+        "price": "20.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/6/0.jpg", "assets/img/just_dropped/6/1.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Oat and juniper hand cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/5/0.jpg", "assets/img/just_dropped/5/1.jpg", "assets/img/just_dropped/5/2.jpg"]
+    },
+    {
+        "id": 0,
+        "name": "Bright Blush Powder",
+        "price": "21.95",
+        "price_discount": "32.95",
+        "currency": "€",
+        "description": {
+            "description_1": "Sheer and buildable, 'Free Soul' is a pale-pink powder that's infused with light-catching particles to give you a natural glow. Natural, healthy-looking colour that immediately enlivens the complexion. A light application of even the highest-intensity hues delivers a natural-looking flush.",
+            "description_2": "Instructions for use: <br> Smile and gently swirl color over the cheekbones. For an all-over glow, lightly dust powder wherever the sun hits your face.",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only."    
+        },
+        "img_links": ["assets/img/just_dropped/0/0.jpg", "assets/img/just_dropped/0/1.jpg"]
+    },
+    {
+        "id": 1,
+        "name": "Luxe Face Cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "This is a Beyond Beauty product which means it has been sourced, tried and tested and finally declared one of the most new and innovative heroes out there.",
+            "description_2": "ORSEN's anti-aging Face Cream will keep your skin hydrated and firm throughout the day. When used at night, you awaken to healthy-looking and refreshed skin 24/7. It quickly absorbs into the skin to give your complexion a radiant glow. Skullcap and Purslane are anti-aging powerhouses that help calm the skin and reduce visible signs of irritation.",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/1/0.jpg", "assets/img/just_dropped/1/1.jpg"]
+    },
+    {
+        "id": 2,
+        "name": "Astro Space Lipstick",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Triple Luxe formula is long lasting, natural and moisturising. Enriched with Avocado, Jojoba Oils and Vitamins C and E, it provides deep hydration while creating a barrier to lock in moisture. It also works to reduce the appearance of fine lines and wrinkles, for a smooth and supple smile.",
+            "description_2": "Instructions for use: Smile and gently swirl color over the cheekbones. Apply directly to lips from the bullet or with a lip. Glide onto the heart of lips, working outward towards the corners.",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/2/0.jpg", "assets/img/just_dropped/2/1.jpg", "assets/img/just_dropped/2/2.jpg"]
+    },
+    {
+        "id": 3,
+        "name": "Sera perfume",
+        "price": "65.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/3/0.jpg", "assets/img/just_dropped/3/1.jpg", "assets/img/just_dropped/3/2.jpg"]
+    },
+    {
+        "id": 4,
+        "name": "Bloom No.2",
+        "price": "65.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/4/0.jpg", "assets/img/just_dropped/4/1.jpg", "assets/img/just_dropped/4/2.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Oat and juniper hand cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/5/0.jpg", "assets/img/just_dropped/5/1.jpg", "assets/img/just_dropped/5/2.jpg"]
+    },
+    {
+        "id": 6,
+        "name": "Base Concealer",
+        "price": "20.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/6/0.jpg", "assets/img/just_dropped/6/1.jpg"]
+    },
+    {
+        "id": 7,
+        "name": "Base Concealer",
+        "price": "15.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/7/0.jpg", "assets/img/just_dropped/7/1.jpg"]
+    },
+    {
+        "id": 7,
+        "name": "Base Concealer",
+        "price": "15.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/7/0.jpg", "assets/img/just_dropped/7/1.jpg"]
+    },
+    {
+        "id": 6,
+        "name": "Base Concealer",
+        "price": "20.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "Dark circles, redness, and other imperfections are no match for this buildable, medium-coverage concealer. In addition to providing flawless coverage, it’s formulated with knotgrass extract to help reduce the appearance of fine lines and photoaging—so skin looks firmer, brighter, and instantly more even. The click-pen design and brush applicator make it easy to apply just the right amount exactly where you need it.",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/6/0.jpg", "assets/img/just_dropped/6/1.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "Oat and juniper hand cream",
+        "price": "30.00",
+        "price_discount": 0,
+        "currency": "€",
+        "description": {
+            "description_1": "A mellow and sensual perfume, a profusion of flowers revealing the sensuality of gardenia, underscored by velvety notes of apricot blossom. It opens with tangerine, blackcurrant and freesia, then flows into a heart of jasmine and Bulgarian rose. ",
+            "description_2": "Instructions for use: <br> Spritz onto pulse point <br> 50ml/ 1.69fl.oz. <br> Made in Brazil ",
+            "decription_3": "This is a demonstration store. This product, and its image and text, is placeholder only.."    
+        },
+        "img_links": ["assets/img/just_dropped/5/0.jpg", "assets/img/just_dropped/5/1.jpg", "assets/img/just_dropped/5/2.jpg"]
     }
 ]

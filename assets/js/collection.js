@@ -26,7 +26,7 @@ function returnBanner() {
 }
 
 function returnPaginatorValue() {
-  return +$(".disclosure__option--current", paginator)[0].innerHTML;
+  return +$(".pagination__option--current", paginator)[0].innerHTML;
 }
 
 function renderCollectionItems(limit, result, chunks) {
@@ -34,12 +34,13 @@ function renderCollectionItems(limit, result, chunks) {
   let contentChunks = chunks
     ? chunks
     : splitArrayIntoChunksOfLen(result, limit);
-  console.log(contentChunks);
   // 2) Looping through each chunk, diplaying all it's contents
   contentChunks.forEach((chunk, countElements) => {
     // 3) If there is a overflow of the current block, create a new one and fill it with the next chunk of data
     if (countElements > 0) {
-      container[container.length - 1].insertAdjacentHTML(
+      $(".productsContainer")[
+        $(".productsContainer").length - 1
+      ].insertAdjacentHTML(
         "afterend",
         `<div class="row productsContainer" id="productsRowContainer-${
           countElements + 1
@@ -51,8 +52,14 @@ function renderCollectionItems(limit, result, chunks) {
       $(".productsContainer")[$(".productsContainer").length - 1];
     // 5) Actually looping through all the items and filling the cunks
     for (let i = 0; i < chunk.length; i++) {
-      console.log(chunk);
       if (result[i]) {
+        if (!lastContainer) {
+          $("#collectionPagination").before(
+            `<div class="row productsContainer" id="productsRowContainer-1"></div>`
+          );
+          lastContainer = $(".productsContainer")[0];
+        }
+
         lastContainer.innerHTML += returnCarouselItem(chunk[i]);
         if (i === limit - 1) {
           if (i % 4 === 0) {
@@ -98,12 +105,19 @@ function renderPagination(count) {
     $(".next__list-item").before(
       `<li class="pages__list-item"><a>${i + 1}</a></li>`
     );
+    if (i < 5) {
+      $($(".pages__list-item")[i]).show();
+    } else {
+      $($(".pages__list-item")[i]).hide();
+    }
     if (i === 0) {
       $(".pages__list-item > a")[0].classList.add("active-pagination-button");
     }
   }
   $(".pages__list-item").on("click", (e) => {
-    switchPage(e);
+    if (!$(e.target).hasClass("pages__list-item")) {
+      switchPage(e);
+    }
   });
 }
 
@@ -115,15 +129,11 @@ function returnPagesLimit(count) {
 }
 
 // Changing the on the limit of items dropdown
-$(".disclosure__list-item").on("click", function () {
+$(".pagination__option").on("click", function () {
   let limit = returnPaginatorValue();
-  for (let i = 0; i < $(".productsContainer").length; i++) {
-    if (i > 0) {
-      $(".productsContainer")[i].remove();
-    }
-  }
+  $(".productsContainer").remove();
+  $(".pages__list-item").remove();
   container = $(".productsContainer");
-  $(container).empty().show();
   if ($(".pages__list-item > a").length === 0) {
     renderPagination(dataCollection.length);
   }
@@ -153,22 +163,20 @@ function getCurrentPagination() {
   return $(".active-pagination-button");
 }
 
-function switchPage(e) {
+function switchPage(e, pageIndex) {
+  let activePageIndex = pageIndex ? pageIndex : null;
   const containers = $(".productsContainer");
-  $(".pages__list-item > a").removeClass("active-pagination-button");
-  e.target.classList.add("active-pagination-button");
-  let activePageIndex = +getCurrentPagination()[0].innerHTML;
+  if (e) {
+    $(".pages__list-item > a").removeClass("active-pagination-button");
+    e.target.classList.add("active-pagination-button");
+  }
+  activePageIndex = +getCurrentPagination()[0].innerHTML;
   Array.from(containers).forEach((container, index) => {
     $(container).hide();
     if (index + 1 === activePageIndex) {
       $(container).show();
     }
   });
-  const containerIDs = Array.from(
-    $(".productsContainer").map((index, item) => {
-      return +item.id.split("-")[1];
-    })
-  );
 }
 
 function hideOrShowPagination(pagesLimit) {
@@ -178,3 +186,55 @@ function hideOrShowPagination(pagesLimit) {
     $("#pagesList").show();
   }
 }
+
+$(".next__list-item").on("click", function (e) {
+  let currentElement;
+  const items = Array.from($(".pages__list-item > a"));
+  items.forEach((link, index) => {
+    if ($(link).hasClass("active-pagination-button")) {
+      currentElement = index;
+    }
+  });
+  if ($(".pages__list-item > a")[currentElement + 1]) {
+    items.forEach((link, index) => {
+      link.classList.remove("active-pagination-button");
+    });
+    $(".pages__list-item > a")[currentElement + 1].classList.add(
+      "active-pagination-button"
+    );
+  }
+  switchPage(null, +getCurrentPagination()[0].innerHTML);
+  $($(".active-pagination-button")[0].parentNode).show();
+  if ($(".pages__list-item")[+getCurrentPagination()[0].innerHTML - 6]) {
+    $($(".pages__list-item")[+getCurrentPagination()[0].innerHTML - 6]).hide();
+  }
+});
+
+$(".prev__list-item").on("click", function (e) {
+  let currentElement;
+  const items = Array.from($(".pages__list-item > a"));
+  items.forEach((link, index) => {
+    if ($(link).hasClass("active-pagination-button")) {
+      currentElement = index;
+    }
+  });
+  if ($(".pages__list-item > a")[currentElement - 1]) {
+    items.forEach((link, index) => {
+      link.classList.remove("active-pagination-button");
+    });
+    $(".pages__list-item > a")[currentElement - 1].classList.add(
+      "active-pagination-button"
+    );
+  }
+  switchPage(null, +getCurrentPagination()[0].innerHTML);
+  if (
+    $(".pages__list-item")[+getCurrentPagination()[0].innerHTML] &&
+    +$(".pages__list-item > a")[+getCurrentPagination()[0].innerHTML]
+      .innerHTML >= 6
+  ) {
+    $($(".pages__list-item")[+getCurrentPagination()[0].innerHTML]).hide();
+  }
+  if ($(".pages__list-item")[+getCurrentPagination()[0].innerHTML - 5]) {
+    $($(".pages__list-item")[+getCurrentPagination()[0].innerHTML - 5]).show();
+  }
+});

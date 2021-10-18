@@ -6,8 +6,6 @@ $(document).ready(function () {
     dataType: "json",
     success: function (result) {
       currentItem = result.find((item) => item.id === thisProductId);
-      console.log(currentItem);
-      console.log($("#productHeading").text());
       $("#productHeading").text(currentItem.name);
       $("#productLink").text(currentItem.name);
       $("#priceText").text(

@@ -175,3 +175,7 @@ h2.text-block__heading {
   cursor: pointer;
   transition: 0.3s;
 }
+
+.pages__list-item a {
+  text-decoration: none;
+}

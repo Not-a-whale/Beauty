@@ -712,6 +712,14 @@
   .product__text {
     order: 3;
   }
+
+  .pagination {
+    justify-content: center;
+  }
+
+  .pagination .pages {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 1441px) {

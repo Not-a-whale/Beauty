@@ -1,7 +1,6 @@
 $(document).ready(function () {
   const container = $(".main-menu__container");
   $(".mobile__nav-trigger").click(function () {
-    console.log("triggered");
     $(".overlay--left").toggleClass("overlay-active");
   });
 
