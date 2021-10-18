@@ -715,6 +715,7 @@
 
   .pagination {
     justify-content: center;
+    flex-direction: column;
   }
 
   .pagination .pages {
