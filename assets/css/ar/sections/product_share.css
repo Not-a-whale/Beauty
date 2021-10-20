@@ -52,3 +52,7 @@
   padding-left: 8.5vw;
   padding-right: 8.5vw;
 }
+
+.product__img {
+  min-height: 250px;
+}
