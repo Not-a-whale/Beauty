@@ -1,0 +1,113 @@
+.display {
+  display: block !important;
+}
+
+.opacity0 {
+  opacity: 0 !important;
+}
+
+.opacity05 {
+  opacity: 0.5 !important;
+}
+
+.opacity05:hover {
+  cursor: not-allowed !important;
+  transform: scale(1) !important;
+  box-shadow: none !important;
+}
+
+.dot-active::after {
+  background: #fff;
+  box-shadow: 0 0 2px rgb(0 0 0 / 60%);
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.circled-gift-card {
+  border: 1px solid #e3e6e9 !important;
+}
+
+.lazy-background-1 {
+  padding-top: 69.1358%;
+  background: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lazy-background-2 {
+  background: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lazy-background-1.visible {
+  background: url("../../../img/parallax-banner.jpg"); /* The final image */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lazy-background-2.visible {
+  background: url("../../../img/sale.jpg"); /* The final image */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay-active {
+  visibility: visible !important;
+}
+
+.overlay-active .overlay__shopping-cart {
+  right: 0 !important;
+}
+
+.overlay-active .overlay__main-menu {
+  left: 0 !important;
+}
+
+.overlay-active .overlay-cross {
+  display: block !important;
+}
+
+.overlay-active .overlay-cross--right {
+  display: block;
+  width: 20px;
+}
+
+.isRTL {
+  direction: rtl !important;
+}
+
+.carousel--prev.isRTL {
+  left: 0;
+}
+
+.overlay__main-menu.isRTL {
+  right: 0 !important;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+.active-pagination-button {
+  background-color: var(--color-header-bg);
+  text-decoration: none;
+}
+
+.pad-right-active {
+  background: var(--color-tabs-accordions);
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 36px;
+}
+
+.pad-left-active {
+  background: var(--color-tabs-accordions);
+  border-top-left-radius: 36px;
+  border-bottom-left-radius: 36px;
+}

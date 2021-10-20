@@ -1,0 +1,19 @@
+@import url("../elements/global.css");
+@import url("../elements/header.css");
+@import url("../elements/footer.css");
+@import url("../elements/carousel.css");
+
+@import url("../sections/community.css");
+@import url("../sections/benefits.css");
+@import url("../sections/favorites.css");
+@import url("../sections/gift-card.css");
+@import url("../sections/highlights.css");
+@import url("../sections/inpress.css");
+@import url("../sections/just-dropped.css");
+@import url("../sections/main_blog.css");
+@import url("../sections/main-sale.css");
+@import url("../sections/main-slider.css");
+@import url("../sections/skincare.css");
+@import url("../sections/video.css");
+
+@import url("../elements/mobile-styles.css");

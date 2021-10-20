@@ -1,0 +1,54 @@
+.product__share {
+  background-color: var(--color-slider-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product__share h2 {
+  margin-top: 37px;
+  margin-bottom: 64px;
+}
+
+.product__social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  margin-bottom: 90px;
+}
+
+.product__social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97px;
+  height: 44px;
+  background-color: var(--color-button);
+  border: 1px solid #fcfbfc;
+}
+
+.product__social-network img {
+  width: 16px;
+  height: 13px;
+  margin-right: 6px;
+}
+
+.product__social-network h4 {
+  margin-bottom: 0;
+}
+
+.product__social-network,
+.product__social-network > * {
+  text-decoration: none;
+}
+
+.product__social-network--facebook {
+  border: 1px solid #e3e6e9;
+}
+
+.skincare__container {
+  padding-left: 8.5vw;
+  padding-right: 8.5vw;
+}

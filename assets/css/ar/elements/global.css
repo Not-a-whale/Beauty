@@ -1,0 +1,319 @@
+@import url("../common/bootstrap-grid.css");
+@import url("../common/bootstrap-grid.rtl.css");
+@import url("../common/bootstrap-reboot.css");
+@import url("../common/bootstrap-utilities.css");
+@import url("../common/bootstrap.css");
+@import url("./fonts.css");
+@import url("./helper-classes.css");
+@import url("./overlay.css");
+@import url("../elements/mobile-styles.css");
+
+:root {
+  --image--popup: url("//cdn.shopify.com/s/files/1/0348/6821/files/Stocksy_txp2f2db77agsj200_Small_3189776_1200x.jpg?v=1591887424");
+  /* Colors */
+  --color--accent: #ffd7d7;
+  --color-text: #212121;
+  --color-page-bg: #ffffff;
+  --color-badge-bdr: rgba(33, 33, 33, 0.05);
+  --color-border: #e0e0e0;
+  --color-button: #ffffff;
+  --color-button-bg: #272727;
+  --color--body--light: #515151;
+  --color--alternative: #ffffff;
+  --color-header: #272727;
+  --color-header-bg: #ffeff0;
+  --color-header-bg--transparent: rgba(255, 239, 240, 0);
+  --color-header-bg--opaque: rgba(255, 239, 240, 0.95);
+  --color-menubar: #272727;
+  --color-cart: #272727;
+  --color--footer: #333333;
+  --bg-color--footer: #ffeff0;
+  --color-slider-caption: #272727;
+  --color-slider-caption-bg: #ffffff;
+  --color-slider-button: #f7f7f7;
+  --color-slider-button-bg: #272727;
+  --color-slider-button-hover-bg: ;
+  --color-slider-nav: #272727;
+  --color-product-slider-bg: ;
+  --color-featured-promo-bg: ;
+  --color-social-feed-bg: ;
+  --color-tabs-accordions: #ebebeb;
+  --payment-terms-background-color: #ffffff;
+  --badge-color: #f7bcc7;
+  --highlights-background: #fcfbfc;
+
+  /* Breakpoints */
+
+  --tiny-mobile-breakpoint: 374px;
+  --mobile-breakpoint: 767px;
+  --tablet-breakpoint: 1023px;
+  --desktop-breakpoint: 1439px;
+  --big-desktop-breakpoint: 1919px;
+
+  /* Fonts */
+
+  --font--featured-heading--size: 24px;
+  --font--section-heading--size: 20px;
+  --font--block-heading--size: 16px;
+  --font--heading--uppercase: uppercase;
+  --font--paragraph--size: 16px;
+  --font--heading--family: Roboto, sans-serif;
+  --font--heading--weight: 400;
+  --font--heading--normal-weight: 400;
+  --font--heading--style: normal;
+  --font--accent--family: Karla, sans-serif;
+  --font--accent--weight: 400;
+  --font--accent--style: normal;
+  --font--accent--size: 13px;
+  --font--paragraph--family: Roboto, sans-serif;
+  --font--paragraph--weight: 400;
+  --font--paragraph--style: normal;
+  --font--bolder-paragraph--weight: 700;
+  --font--gift-card: "Playfair Display", serif;
+}
+
+/* Main styles for the whole project */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-page-bg);
+  overflow-x: hidden;
+}
+
+main {
+  display: block;
+  background-color: #ffffff;
+}
+
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: var(--font--paragraph--family);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  /* page-bg */
+
+  color: var(--color-button);
+}
+
+h2 {
+  font-family: var(--font--paragraph--family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--font--paragraph--family);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: var(--font--accent--family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: var(--font--accent--family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+h6 {
+  display: none;
+}
+
+a {
+  font-family: var(--font--accent--family);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.innerdoc_wrapper ul {
+}
+
+.innerdoc_wrapper li {
+}
+
+span {
+  display: flex;
+}
+
+label {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input {
+  max-width: 250px;
+  max-height: 46px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 2px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  background-color: var(--color-page-bg);
+  cursor: pointer;
+  padding: 8px 15px 8px 16px;
+  background: #ffffff;
+}
+
+img {
+}
+
+.innerdoc_wrapper img {
+}
+
+.innerdoc_wrapper {
+}
+
+button {
+  outline: none;
+}
+
+button.medium-button {
+  width: 52px;
+  height: 38px;
+  background-color: var(--color-text);
+  color: var(--color--alternative);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+button.big-button {
+  min-width: 400px;
+  height: 46px;
+  background-color: var(--color-text);
+  color: var(--color-page-bg);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+button.small-button {
+  width: 116px;
+  height: 46px;
+  background-color: var(--color-text);
+  color: var(--color-page-bg);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+button.big-button--white {
+  background-color: var(--color-page-bg) !important;
+  color: var(--color-text) !important;
+  border: 2px solid var(--color-text) !important;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  padding-left: 8.5%;
+  padding-right: 8.5%;
+}
+
+.container__bottom {
+  margin-bottom: 74px;
+}
+
+.currency_en {
+}
+
+.currency_number_en {
+  margin-right: 2px;
+  margin-left: 2px;
+}

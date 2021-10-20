@@ -1,0 +1,9 @@
+@import url("../elements/header.css");
+@import url("../elements/footer.css");
+@import url("../elements/carousel.css");
+
+@import url("../sections/breadcrumbs.css");
+@import url("../sections/product_product.css");
+@import url("../sections/product_share.css");
+
+@import url("../elements/global.css");

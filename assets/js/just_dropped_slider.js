@@ -172,7 +172,9 @@ function returnCarouselItem(result) {
   const saleBadge =
     '<div class="just-dropped__badge just-dropped__badge--sale carousel__badge carousel__badge--sale">Sale</div>';
   const salePriceMarkup = `<span class="just-dropped__crossed carousel__crossed">${result.currency}${result.price_discount}</span>`;
-
+  /*   ../../product-en.html/${
+    result.id
+  } */
   return `
   <a href="../../product-en.html/${
     result.id
@@ -206,7 +208,11 @@ $(document).on("click", "a.carousel__item", function (e, id) {
   let arr = $(this).attr("href").toString().split("/");
   let productId = arr[arr.length - 1];
   localStorage.setItem("productId", productId);
-  $(this).attr("href", "../../product-en.html");
+  if ($(location).attr("href").split("-")[1].split(".")[0] === "ar") {
+    $(this).attr("href", "../../product-ar.html");
+  } else {
+    $(this).attr("href", "../../product-en.html");
+  }
 });
 
 /* animation of clicking on + button and adding a product */

@@ -1,0 +1,31 @@
+.main_blog h2 {
+  margin-bottom: 25px;
+}
+
+.main_blog__item h3 {
+  min-height: 50px;
+}
+
+.main_blog__item {
+  max-width: 360px;
+}
+
+.main_blog__row--bottom {
+  margin-bottom: 74px;
+}
+
+.main_blog__row--bottom button {
+  min-width: 115px;
+}
+
+.main_blog__row--bottom button a {
+  text-decoration: none;
+}
+
+.main_blog__item h3 a {
+  text-decoration: none;
+}
+
+.main_blog__container {
+  padding: 0 8.5vw;
+}

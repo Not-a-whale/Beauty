@@ -1,0 +1,14 @@
+@import url("../elements/global.css");
+@import url("../elements/header.css");
+@import url("../elements/footer.css");
+@import url("../elements/global.css");
+
+.login__control input {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.small-button.big-button--white {
+  margin-left: -25px;
+  margin-right: 20px;
+}

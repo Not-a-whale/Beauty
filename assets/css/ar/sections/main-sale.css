@@ -1,0 +1,42 @@
+.parallax-banner {
+  height: 70vh;
+  overflow: hidden;
+}
+
+.parallax {
+  height: 100%;
+  /*   background-image: url("../../../img/parallax-banner.jpg"); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-sale {
+  margin-bottom: 74px;
+}
+
+.main-sale__parallax {
+  /*   background-image: url("../../../img/sale.jpg"); */
+}
+
+.main-sale .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-shrink: 1;
+  max-width: 500px;
+  max-height: 95%;
+}
+
+.main-sale .text-block h2,
+.main-sale .text-block h3,
+.main-sale .text-block h4,
+.main-sale .text-block p,
+.main-sale .text-block a {
+  text-align: center;
+}

@@ -252,7 +252,6 @@ $("#tilesByTwo").on("click", function () {
       item.classList.remove("col-lg-5");
       item.classList.add("col-lg-7");
     } else {
-      console.log($(item).hasClass("product-banner"));
       item.classList.remove("col-lg-3");
       item.classList.add("col-lg-5");
     }
@@ -268,7 +267,6 @@ $("#tilesByThree").on("click", function () {
       item.classList.remove("col-lg-7");
       item.classList.add("col-lg-3");
     } else {
-      console.log($(item).hasClass("product-banner"));
       item.classList.remove("col-lg-3");
       item.classList.add("col-lg-5");
     }

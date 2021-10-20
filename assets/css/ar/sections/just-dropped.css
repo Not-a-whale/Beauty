@@ -1,0 +1,38 @@
+.just-dropped__link {
+  text-align: center;
+}
+
+.just-dropped__arrows {
+  display: flex;
+  position: absolute;
+  right: 120px;
+}
+
+.just-dropped__arrow {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-page-bg);
+  transition: all 1s ease-out;
+}
+
+.just-dropped__arrow-left {
+  margin-right: 22px;
+}
+
+.just-dropped__arrow:hover {
+  opacity: 1;
+  box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+.carousel__img {
+  transition: 0.3s all;
+}

@@ -1,0 +1,27 @@
+.community {
+  padding: 120px 8.5vw 120px 8.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.community__block {
+  padding-left: 20px;
+}
+
+.community__block h2 {
+  font-weight: 500;
+}
+
+.community img {
+  max-height: 768px;
+  max-width: 768px;
+}
+
+.community h4 {
+  margin-bottom: 20px;
+}
+
+.community p {
+  margin-bottom: 50px;
+}
