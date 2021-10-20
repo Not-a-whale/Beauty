@@ -48,10 +48,12 @@
 
 .product__img {
   max-width: 100%;
+  align-items: center !important;
 }
 
 .product__img img {
   max-width: 100%;
+  min-width: 80%;
 }
 
 .product__buttons-container button {
@@ -69,4 +71,27 @@
 
 .gift-card__selection-item {
   cursor: pointer;
+}
+
+#magnifying_area {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 120%;
+}
+
+#mainProductImage {
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+#magnifying_area:hover {
+  cursor: zoom-in;
 }

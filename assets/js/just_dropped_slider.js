@@ -176,7 +176,7 @@ function returnCarouselItem(result) {
   return `
   <a href="../../product-en.html/${
     result.id
-  }" class="just-dropped__item carousel__item">
+  }" class="just-dropped__item carousel__item carousel__item--${result.id}">
   <div class="just-dropped__img-container carousel__img-container">
       ${result.price_discount ? saleBadge : ""}
       <img loading="lazy" class="just-dropped__img carousel__img" src="./assets/img/just_dropped/${
@@ -240,3 +240,36 @@ function addToCart(e, result) {
     }, 2000);
   });
 }
+
+$(document).on("mouseenter", "a.carousel__item", function () {
+  setTimeout(() => {
+    console.log($($(this).children()[0]).children()[1].src);
+    if ($($(this).children()[0]).children()[0].src) {
+      if ($($(this).children()[0]).children()[0].src.split("/0.jpg")) {
+        $($(this).children()[0]).children()[0].src =
+          $($(this).children()[0]).children()[0].src.split("/0.jpg")[0] +
+          "/1.jpg";
+      }
+    } else if ($($(this).children()[0]).children()[1].src.split("/0.jpg")[0]) {
+      $($(this).children()[0]).children()[1].src =
+        $($(this).children()[0]).children()[1].src.split("/0.jpg")[0] +
+        "/1.jpg";
+    } else {
+      return;
+    }
+  }, 300);
+});
+
+$(document).on("mouseleave", "a.carousel__item", function () {
+  setTimeout(() => {
+    if ($($(this).children()[0]).children()[0].src) {
+      $($(this).children()[0]).children()[0].src =
+        $($(this).children()[0]).children()[0].src.split("/1.jpg")[0] +
+        "/0.jpg";
+    } else {
+      $($(this).children()[0]).children()[1].src =
+        $($(this).children()[0]).children()[1].src.split("/1.jpg")[0] +
+        "/0.jpg";
+    }
+  }, 300);
+});
