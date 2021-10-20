@@ -149,10 +149,14 @@
 
 .header__right {
   display: flex;
+  align-items: center;
 }
 
 .flag {
   display: flex;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .flag:hover {
@@ -176,6 +180,49 @@
 
 .flag__list {
   display: none;
+  position: absolute;
+  top: 110%;
+  background: var(--badge-color);
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .flag__mobile {
+    display: block;
+    position: relative;
+  }
+
+  .flag__phone {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .flag__phone .flag__list-item a img {
+    width: 28px;
+    height: 20px;
+  }
+}
+
+.flag__list-option {
+  display: flex;
+  text-decoration: none;
+}
+
+.flag__list-option img {
+  max-width: 28px;
+  max-height: 20px;
+  margin-right: 12px;
+}
+
+.flag__list-option p {
+  color: #fff;
+}
+
+.flag__list-item {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
 .logging {
@@ -327,4 +374,16 @@ a.main-menu__link--heading {
 
 .flag__mobile {
   display: none;
+}
+
+.header__bottom--search {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__bottom--search {
+    display: flex;
+    padding: 0px 8.5% 15px;
+    justify-content: flex-end;
+  }
 }

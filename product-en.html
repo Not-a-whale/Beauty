@@ -17,7 +17,6 @@
     <script src="./assets/js/just_dropped_slider.js" defer></script>
     <script src="./assets/js/shared/bootstrap.bundle.js" defer></script>
     <script src="./assets/js/shared/bootstrap.js" defer></script>
-    <script src="./assets/js/rtl.js" defer></script>
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/shopping_cart.js" defer></script>
     <script src="./assets/js/product-page.js" defer></script>
@@ -64,9 +63,9 @@
                 </div>
             </div>
             <div class="header__center">
-                    <a href="./index-en.html" role="banner" title="Blockshop theme - Beauty">
-                        <img loading="lazy" src="./assets/img/main_logo.png" alt="">
-                    </a>
+                <a href="./index-en.html">
+                    <img loading="lazy" src="./assets/img/main_logo.png" alt="img main back to home">
+                </a>
             </div>
             <div class="header__right">
                 <div class="flag flag__desktop">
@@ -78,14 +77,16 @@
                     </div>
                     <ul class="flag__list">
                         <li class="flag__list-item">
-                            <span class="flag__list-option">
-                                UAE
-                            </span>
+                            <a href="./index-ar.html" class="flag__list-option">
+                                <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
+                                <p>UAE</p>
+                            </a>
                         </li>
                         <li class="flag__list-item">
-                            <span class="flag__list-option">
-                                US
-                            </span>
+                            <a href="./index-en.html" class="flag__list-option">
+                                <img loading="lazy" src="./assets/img/US_flag.png" alt="US flag">
+                                <p>US</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -108,9 +109,9 @@
                 <img src="./assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
             </div>
             <div class="logging logging__mobile">
-                <a href="/login" class="logging__login">Login</a>
+                <a href="./login-en.html" class="logging__login">Login</a>
                 <p class="logging__text">/</p>
-                <a href="/login" class="logging__sign-up">Sign up</a>
+                <a href="./login-en.html" class="logging__sign-up">Sign up</a>
             </div>
             <nav class="header__desktop-nav">
                 <ul class="main-menu">
@@ -122,10 +123,10 @@
                         <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
                     </li>
                     <li class="main-menu__item">
-                        <a href="/blog" class="main-menu__link">Blog</a>
+                        <a href="./blog-en.html" class="main-menu__link">Blog</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="/blog" class="main-menu__link">About us</a>
+                        <a href="./blog-en.html" class="main-menu__link">About us</a>
                     </li>
                     <li class="main-menu__item">
                         <a href="/theme-features" class="main-menu__link">Theme features</a>
@@ -141,16 +142,23 @@
                 </div>
                 <ul class="flag__list">
                     <li class="flag__list-item">
-                        <span class="flag__list-option">
-                            UAE
-                        </span>
+                        <a href="./index-ar.html" class="flag__list-option">
+                            <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
+                            <p>UAE</p>
+                        </a>
                     </li>
                     <li class="flag__list-item">
-                        <span class="flag__list-option">
-                            US
-                        </span>
+                        <a href="./index-en.html" class="flag__list-option">
+                            <img loading="lazy" src="./assets/img/US_flag.png" alt="US flag">
+                            <p>US</p>
+                        </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="header__bottom--search">
+            <div class="search-bar">
+                <img loading="lazy" src="./assets/img/search_icon.svg" alt="search image" class="search-bar__img">
             </div>
         </div>
         <div class="dropdown-nav" id="headerDropdownNav">
@@ -169,7 +177,7 @@
                     <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop by type</a>
                     <ul class="dropdown__list">
                         <li class="main-menu__item">
-                            <a href="/collection" class="main-menu__link main-menu__link--small">Shop all</a>
+                            <a href="./collection-en.html" class="main-menu__link main-menu__link--small">Shop all</a>
                         </li>
                         <li class="main-menu__item">
                             <a href="/theme-features" class="main-menu__link main-menu__link--small">Skin care</a>
@@ -264,6 +272,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 product__img product__section d-flex align-items-md-start align-items-lg-center justify-content-md-start">
                     <figure id="magnifying_area">
                         <img loading="lazy" src="./assets/img/product/item_1_big.png" alt="item 1 creme big" id="mainProductImage">
+
                     </figure>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 product__text product__section">

@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $(".flag").click(function() {
+$(document).ready(function () {
+  /*     $(".flag").click(function() {
         $("div").toggleClass('isRTL');
         $("p").toggleClass('isRTL');
         $("body").toggleClass('isRTL');
@@ -13,5 +13,5 @@ $(document).ready(function() {
         $("body").toggleClass('isRTL');
         $("header").toggleClass('isRTL');
         $("footer").toggleClass('isRTL');
-    });
-})
+    }); */
+});

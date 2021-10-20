@@ -94,3 +94,7 @@ $(".search-bar__img").on("click", function () {
     $("#searchScreen").show();
   }, 300);
 });
+
+$(".flag__options").on("click", function () {
+  $(this).next().toggle();
+});

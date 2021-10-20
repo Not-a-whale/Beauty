@@ -99,3 +99,15 @@
   background-color: var(--color-header-bg);
   text-decoration: none;
 }
+
+.pad-right-active {
+  background: var(--color-tabs-accordions);
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 36px;
+}
+
+.pad-left-active {
+  background: var(--color-tabs-accordions);
+  border-top-left-radius: 36px;
+  border-bottom-left-radius: 36px;
+}

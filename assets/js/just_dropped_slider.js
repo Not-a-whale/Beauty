@@ -243,17 +243,21 @@ function addToCart(e, result) {
 
 $(document).on("mouseenter", "a.carousel__item", function () {
   setTimeout(() => {
-    console.log($($(this).children()[0]).children()[1].src);
-    if ($($(this).children()[0]).children()[0].src) {
-      if ($($(this).children()[0]).children()[0].src.split("/0.jpg")) {
+    if (
+      $($(this).children()[0]).children()[0] ||
+      $($(this).children()[0]).children()[1]
+    ) {
+      if ($($(this).children()[0]).children()[0].src) {
         $($(this).children()[0]).children()[0].src =
           $($(this).children()[0]).children()[0].src.split("/0.jpg")[0] +
           "/1.jpg";
+      } else if (
+        $($(this).children()[0]).children()[1].src.split("/0.jpg")[0]
+      ) {
+        $($(this).children()[0]).children()[1].src =
+          $($(this).children()[0]).children()[1].src.split("/0.jpg")[0] +
+          "/1.jpg";
       }
-    } else if ($($(this).children()[0]).children()[1].src.split("/0.jpg")[0]) {
-      $($(this).children()[0]).children()[1].src =
-        $($(this).children()[0]).children()[1].src.split("/0.jpg")[0] +
-        "/1.jpg";
     } else {
       return;
     }
@@ -262,14 +266,19 @@ $(document).on("mouseenter", "a.carousel__item", function () {
 
 $(document).on("mouseleave", "a.carousel__item", function () {
   setTimeout(() => {
-    if ($($(this).children()[0]).children()[0].src) {
-      $($(this).children()[0]).children()[0].src =
-        $($(this).children()[0]).children()[0].src.split("/1.jpg")[0] +
-        "/0.jpg";
-    } else {
-      $($(this).children()[0]).children()[1].src =
-        $($(this).children()[0]).children()[1].src.split("/1.jpg")[0] +
-        "/0.jpg";
+    if (
+      $($(this).children()[0]).children()[0] ||
+      $($(this).children()[0]).children()[0]
+    ) {
+      if ($($(this).children()[0]).children()[0].src) {
+        $($(this).children()[0]).children()[0].src =
+          $($(this).children()[0]).children()[0].src.split("/1.jpg")[0] +
+          "/0.jpg";
+      } else {
+        $($(this).children()[0]).children()[1].src =
+          $($(this).children()[0]).children()[1].src.split("/1.jpg")[0] +
+          "/0.jpg";
+      }
     }
   }, 300);
 });

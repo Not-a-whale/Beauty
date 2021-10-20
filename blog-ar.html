@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blogs</title>
     <link rel="icon" href="./assets/img/sun-icon_50x50.png" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/en/pages/login.css">
-    <script src="./assets/js/main.js" defer></script>
-    <script src="./assets/js/just_dropped_slider.js" defer></script>
-    <script src="./assets/js/shared/bootstrap.bundle.js" defer></script>
-    <script src="./assets/js/shared/bootstrap.js" defer></script>
-    <script src="./assets/js/menu.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/ar/pages/blog.css">
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/just_dropped_slider.js" defer></script>
+    <script src="../assets/js/shared/bootstrap.bundle.js" defer></script>
+    <script src="../assets/js/shared/bootstrap.js" defer></script>
+    <script src="../assets/js/menu.js" defer></script>
+    
+    <script src="./assets/js/rtl.js" defer></script>
+    
 </head>
 <body>
     <header class="header__root">
@@ -60,7 +63,7 @@
                 </div>
             </div>
             <div class="header__center">
-                <a href="./index-en.html">
+                <a href="./index-ar.html">
                     <img loading="lazy" src="./assets/img/main_logo.png" alt="img main back to home">
                 </a>
             </div>
@@ -120,10 +123,10 @@
                         <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
                     </li>
                     <li class="main-menu__item">
-                        <a href="./blog-en.html" class="main-menu__link">Blog</a>
+                        <a href="./blog-ar.html" class="main-menu__link">Blog</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="./blog-en.html" class="main-menu__link">About us</a>
+                        <a href="./blog-ar.html" class="main-menu__link">About us</a>
                     </li>
                     <li class="main-menu__item">
                         <a href="/theme-features" class="main-menu__link">Theme features</a>
@@ -174,7 +177,7 @@
                     <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop by type</a>
                     <ul class="dropdown__list">
                         <li class="main-menu__item">
-                            <a href="./collection-en.html" class="main-menu__link main-menu__link--small">Shop all</a>
+                            <a href="./collection-ar.html" class="main-menu__link main-menu__link--small">Shop all</a>
                         </li>
                         <li class="main-menu__item">
                             <a href="/theme-features" class="main-menu__link main-menu__link--small">Skin care</a>
@@ -218,34 +221,89 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3 mt-md-5 mb-md-5">
-                <h2 class="text-center mt-5">Login</h2>
-                <form action="/" method="POST" class="mb-5">
-                    <div class="login__control mb-2">
-                        <label for="email" >Email</label>
-                        <input type="email" placeholder="Enter valid email" name="email" id="email">
-                    </div>
-                    <div class="login__control mb-4">
-                        <label for="password">Password</label>
-                        <input placeholder="Enter password" type="password" name="password" id="password">
-                    </div>
-                    <a href="/forgot-password">Forgot password</a>
-                    <div class="container">
-                        <div class="row mt-4 mb-5">
-                            <div class="col-md-6 col-sm-12 d-flex justify-content-between">
-                                <button class="small-button big-button--white">
-                                    Login
-                                </button>
-                                <button class="small-button">
-                                    Sign up
-                                </button>
-                            </div>
-                            <div class="col-md-6 col-sm-12 my-md-auto mt-4 text-center">
-                                <a href="/forgot-password">Forgot password</a>
-                            </div>
+            <div class="col-12">
+                <h2 class="blog__heading text-center">Latest News</h2>
+            </div>
+        </div>
+    </div>
+    <section class="blog__container">
+        <h6 class="d-none"></h6>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 blog__item container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 blog__avatar">
+                            <img loading="eager" src="../assets/img/blog/1.png" alt="blog nature image 1">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 mt-md-2 blog__text">
+                            <h2 class="">‘Solar Bond’ Demand Goes Through the Roof</h2>
+                            <h4 class="">September 29, 2021 / 4:34 PM</h4>
+                            <p class="">From bronzers that enhance your tan to ones that help you contour like a pro, check out our pick of the creme de le creme of bronzers to add a...</p>
+                            <a class="" href="/">read more</a>
                         </div>
                     </div>
-                </form>
+                </div>
+                <div class="col-12 blog__item container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 blog__avatar">
+                            <img loading="eager" src="../assets/img/blog/2.png" alt="blog nature image 2">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 mt-md-2 blog__text">
+                            <h2 class="">How Often Should You Shower? Celebrities Ignite a Ferocious Debate</h2>
+                            <h4 class="">June 21, 2021 / 5:20 PM</h4>
+                            <p class="">Hollywood types including Jake Gyllenhaal, Mila Kunis, Ashton Kutcher and Dax Shepard take a lax approach to hygiene, stoking a contentious uproar...</p>
+                            <a class="" href="/">read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 blog__item container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 blog__avatar">
+                            <img loading="lazy" src="../assets/img/blog/3.png" alt="blog nature image 3">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 mt-md-2 blog__text">
+                            <h2 class="">How Often Should You Shower? Celebrities Ignite a Ferocious Debate</h2>
+                            <h4 class="">June 21, 2021 / 5:20 PM</h4>
+                            <p class="">Hollywood types including Jake Gyllenhaal, Mila Kunis, Ashton Kutcher and Dax Shepard take a lax approach to hygiene, stoking a contentious uproar...</p>
+                            <a class="" href="/" >read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 blog__item container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 blog__avatar">
+                            <img loading="lazy" src="../assets/img/blog/4.png" alt="blog nature image 4">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 mt-md-2 blog__text">
+                            <h2 class="">Companies Need More Workers. Why Do They Reject Millions of Résumés?</h2>
+                            <h4 class="">May 19, 2021 / 5:20 PM</h4>
+                            <p class="">Companies are desperate to hire, and yet some workers still can’t seem to find jobs. Here may be one reason why: The software that sorts through...</p>
+                            <a class="" href="/" >read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 blog__item container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 blog__avatar">
+                            <img  loading="lazy" src="../assets/img/blog/1.png" alt="blog nature image 1">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 mt-md-2 blog__text">
+                            <h2 class="">This Quick Trick Makes Steamed Mussels Sensational</h2>
+                            <h4 class="">March 8, 2021 / 5:20 PM</h4>
+                            <p class="">“They grow just a few miles away, on Casco Bay,” said the restaurant’s French-born chef, Frédéric Eliot. “I’m sure other French people will argue...</p>
+                            <a class="" href="/" >read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container container__bottom">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <a href="/">
+                    <button class="small-button">View more</button>
+                </a>
             </div>
         </div>
     </div>
@@ -258,22 +316,22 @@
                     <p>Built exclusively for Shopify's theme store</p>
                     <div class="footer__links-block">
                         <a href="http://www.facebook.com" class="footer__link footer__link--pic">
-                            <img loading="lazy" src="./assets/img/facebook.svg" alt="facebook pic">
+                            <img src="../assets/img/facebook.svg" alt="facebook pic">
                         </a>
                         <a href="http://www.twitter.com" class="footer__link footer__link--pic">
-                            <img loading="lazy" src="./assets/img/twitter.svg" alt="twitter pic">
+                            <img src="../assets/img/twitter.svg" alt="twitter pic">
                         </a>
                         <a href="http://www.instagram.com" class="footer__link footer__link--pic">
-                            <img loading="lazy" src="./assets/img/instagram.svg" alt="instagram pic">
+                            <img src="../assets/img/instagram.svg" alt="instagram pic">
                         </a>
                         <a href="http://www.youtube.com" class="footer__link footer__link--pic">
-                            <img loading="lazy" src="./assets/img/youtube.svg" alt="youtube pic">
+                            <img src="../assets/img/youtube.svg" alt="youtube pic">
                         </a>
                     </div>
                     <div class="disclosure">
                         <div class="disclosure__block">
                             <span class="disclosure__option--current">USD $</span>
-                            <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                            <img src="../assets/img/arrow_down.svg" alt="arrow down">
                         </div>
                         <ul class="disclosure__list">
                             <li class="disclosure__list-item">
@@ -330,22 +388,22 @@
                     <div class="payment-icons__block">
                         <ul class="payment-icons__list">
                             <li class="payment-icons__list-item">
-                                <img loading="lazy" src="./assets/img/visa.svg" alt="visa pic">
+                                <img src="../assets/img/visa.svg" alt="visa pic">
                             </li>
                             <li class="payment-icons__list-item">
-                                <img loading="lazy" src="./assets/img/mastercard.svg" alt="mastercard pic">
+                                <img src="../assets/img/mastercard.svg" alt="mastercard pic">
                             </li>
                             <li class="payment-icons__list-item">
-                                <img loading="lazy" src="./assets/img/amex.svg" alt="amex pic">
+                                <img src="../assets/img/amex.svg" alt="amex pic">
                             </li>
                             <li class="payment-icons__list-item">
-                                <img loading="lazy" src="./assets/img/paypal.svg" alt="paypal pic">
+                                <img src="../assets/img/paypal.svg" alt="paypal pic">
                             </li>
                             <li class="payment-icons__list-item">
-                                <img loading="lazy" src="./assets/img/diners-club.svg" alt="diners-club pic">
+                                <img src="../assets/img/diners-club.svg" alt="diners-club pic">
                             </li>
                             <li class="payment-icons__list-item">
-                                <img loading="lazy" src="./assets/img/discover.svg" alt="discover pic">
+                                <img src="../assets/img/discover.svg" alt="discover pic">
                             </li>
                         </ul>
                     </div>
@@ -365,81 +423,81 @@
                         <a href="/">Home</a>
                     </li>
                     <li class="main-menu__list-item">
-                        <a>Shop beauty <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                        <a>Shop beauty <img src="../assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                         <ul class="main-menu__submenu main-menu__submenu-1">
                             <li class="main-menu__submenu-item">
-                                <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                <a href="">back<img class="main-menu__chevron-left" src="../assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                             </li>
                             <li class="main-menu__submenu-item">
-                                <a href="/blog-en.html">Shop beauty</a>
+                                <a href="/blog">Shop beauty</a>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog-en.html">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <a href="/blog">Shop by type <img src="../assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                 <ul class="main-menu__submenu main-menu__submenu-2">
                                     <li class="main-menu__submenu-item">
-                                        <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                        <a href="">back<img class="main-menu__chevron-left" src="../assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                                     </li>
                                     <li class="main-menu__submenu-item">
-                                        <a href="/blog-en.html">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                        <a href="/blog">Shop by type <img src="../assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Shop All</a>
+                                        <a href="/blog">Shop All</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Skin Care</a>
+                                        <a href="/blog">Skin Care</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Make up</a>
+                                        <a href="/blog">Make up</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Hair care</a>
+                                        <a href="/blog">Hair care</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog-en.html">Shop the edit <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <a href="/blog">Shop the edit <img src="../assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                 <ul class="main-menu__submenu main-menu__submenu-2">
                                     <li class="main-menu__submenu-item">
-                                        <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                        <a href="">back<img class="main-menu__chevron-left" src="../assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                                     </li>
                                     <li class="main-menu__submenu-item">
-                                        <a href="/blog-en.html">Shop the edit</a>
+                                        <a href="/blog">Shop the edit</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Shop All</a>
+                                        <a href="/blog">Shop All</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Skin Care</a>
+                                        <a href="/blog">Skin Care</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Make up</a>
+                                        <a href="/blog">Make up</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog-en.html">Sale <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <a href="/blog">Sale <img src="../assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                 <ul class="main-menu__submenu main-menu__submenu-2">
                                     <li class="main-menu__submenu-item">
-                                        <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
+                                        <a href="">back<img class="main-menu__chevron-left" src="../assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                                     </li>
                                     <li class="main-menu__submenu-item">
-                                        <a href="/blog-en.html">Final reductions</a>
+                                        <a href="/blog">Final reductions</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog-en.html">Fragrance sale</a>
+                                        <a href="/blog">Fragrance sale</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog-en.html">our pics</a>
+                                <a href="/blog">our pics</a>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog-en.html">gift cards</a>
+                                <a href="/blog">gift cards</a>
                             </li>
                         </ul>
                     </li>
                     <li class="main-menu__list-item">
-                        <a href="/blog-en.html">Blog</a>
+                        <a href="/blog">Blog</a>
                     </li>
                     <li class="main-menu__list-item">
                         <a href="/about">about</a>
@@ -453,7 +511,7 @@
                 <div class="disclosure">
                     <div class="disclosure__block">
                         <span class="disclosure__option--current"><p class="currency_en"></p>USD</p> $</span>
-                        <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                        <img loading="lazy" src="../assets/img/arrow_down.svg" alt="arrow down">
                     </div>
                     <ul class="disclosure__list">
                         <li class="disclosure__list-item">
@@ -482,7 +540,7 @@
             </div>
         </div>
         <div class="overlay-cross">
-            <img src="./assets/img/icon/cross.svg" alt="cross img">
+            <img src="../assets/img/icon/cross.svg" alt="cross img">
         </div>
     </div>
     <div class="search-screen" id="searchScreen">
@@ -495,6 +553,6 @@
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> 
 </body>
 </html>

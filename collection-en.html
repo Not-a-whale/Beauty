@@ -17,7 +17,6 @@
     <script src="./assets/js/just_dropped_slider.js" defer></script>
     <script src="./assets/js/shared/bootstrap.bundle.js" defer></script>
     <script src="./assets/js/shared/bootstrap.js" defer></script>
-    <script src="./assets/js/rtl.js" defer></script>
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/shopping_cart.js" defer></script>
     <script src="./assets/js/collection.js" defer></script>
@@ -63,9 +62,9 @@
                 </div>
             </div>
             <div class="header__center">
-                    <a href="./index-en.html" role="banner" title="Blockshop theme - Beauty">
-                        <img loading="lazy" src="./assets/img/main_logo.png" alt="">
-                    </a>
+                <a href="./index-en.html">
+                    <img loading="lazy" src="./assets/img/main_logo.png" alt="img main back to home">
+                </a>
             </div>
             <div class="header__right">
                 <div class="flag flag__desktop">
@@ -77,21 +76,23 @@
                     </div>
                     <ul class="flag__list">
                         <li class="flag__list-item">
-                            <span class="flag__list-option">
-                                UAE
-                            </span>
+                            <a href="./index-ar.html" class="flag__list-option">
+                                <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
+                                <p>UAE</p>
+                            </a>
                         </li>
                         <li class="flag__list-item">
-                            <span class="flag__list-option">
-                                US
-                            </span>
+                            <a href="./index-en.html" class="flag__list-option">
+                                <img loading="lazy" src="./assets/img/US_flag.png" alt="US flag">
+                                <p>US</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="logging logging__desktop">
-                    <a href="/login" class="logging__login">Login</a>
+                    <a href="./login-en.html" class="logging__login">Login</a>
                     <p class="logging__text">/</p>
-                    <a href="/login" class="logging__sign-up">Sign up</a>
+                    <a href="./login-en.html" class="logging__sign-up">Sign up</a>
                 </div>
                 <div class="shopping-cart">
                     <img loading="lazy" src="./assets/img/shopping_cart_icon.svg" alt="shopping cart icon"
@@ -107,9 +108,9 @@
                 <img src="./assets/img/icon/mobile-nav-pic.svg" alt="mobile nav pic">
             </div>
             <div class="logging logging__mobile">
-                <a href="/login" class="logging__login">Login</a>
+                <a href="./login-en.html" class="logging__login">Login</a>
                 <p class="logging__text">/</p>
-                <a href="/login" class="logging__sign-up">Sign up</a>
+                <a href="./login-en.html" class="logging__sign-up">Sign up</a>
             </div>
             <nav class="header__desktop-nav">
                 <ul class="main-menu">
@@ -121,10 +122,10 @@
                         <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
                     </li>
                     <li class="main-menu__item">
-                        <a href="/blog" class="main-menu__link">Blog</a>
+                        <a href="./blog-en.html" class="main-menu__link">Blog</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="/blog" class="main-menu__link">About us</a>
+                        <a href="./blog-en.html" class="main-menu__link">About us</a>
                     </li>
                     <li class="main-menu__item">
                         <a href="/theme-features" class="main-menu__link">Theme features</a>
@@ -140,16 +141,23 @@
                 </div>
                 <ul class="flag__list">
                     <li class="flag__list-item">
-                        <span class="flag__list-option">
-                            UAE
-                        </span>
+                        <a href="./index-ar.html" class="flag__list-option">
+                            <img loading="lazy" src="./assets/img/UAE_flag.png" alt="UAE flag">
+                            <p>UAE</p>
+                        </a>
                     </li>
                     <li class="flag__list-item">
-                        <span class="flag__list-option">
-                            US
-                        </span>
+                        <a href="./index-en.html" class="flag__list-option">
+                            <img loading="lazy" src="./assets/img/US_flag.png" alt="US flag">
+                            <p>US</p>
+                        </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="header__bottom--search">
+            <div class="search-bar">
+                <img loading="lazy" src="./assets/img/search_icon.svg" alt="search image" class="search-bar__img">
             </div>
         </div>
         <div class="dropdown-nav" id="headerDropdownNav">
@@ -168,7 +176,7 @@
                     <a href="/theme-features" class="main-menu__link main-menu__link--heading">Shop by type</a>
                     <ul class="dropdown__list">
                         <li class="main-menu__item">
-                            <a href="/collection" class="main-menu__link main-menu__link--small">Shop all</a>
+                            <a href="./collection-en.html" class="main-menu__link main-menu__link--small">Shop all</a>
                         </li>
                         <li class="main-menu__item">
                             <a href="/theme-features" class="main-menu__link main-menu__link--small">Skin care</a>
@@ -230,20 +238,65 @@
     </section>
     <div class="items-grid">
         <div class="coninainer-fluid">
-            <div class="row">
-                <div class="sorting col-6">
+            <div class="row d-flex">
+                <div class="sorting col-lg-8 col-md-12">
                     <div class="sorting__wrapper">
-                        <span class="sorting__item">Browse</span>
-                        <span class="sorting__item">Sort by</span>
-                        <span class="sorting__item">refine</span>
+                        <div class="sorting__sorter">
+                            <p class="sorting__sorter-text">
+                                sort by:
+                            </p>
+                            <div class="disclosure">
+                                <div class="disclosure__block">
+                                    <span class="disclosure__option--current pagination__option--current">a-z</span>
+                                    <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                                </div>
+                                <ul class="disclosure__list">
+                                    <li class="disclosure__list-item pagination__option">
+                                        <span class="disclosure__option">
+                                            a-z
+                                        </span>
+                                    </li>
+                                    <li class="disclosure__list-item pagination__option">
+                                        <span class="disclosure__option">
+                                            z-a
+                                        </span>
+                                    </li>
+                                </ul>
+                                <input type="text" class="disclosure__input ">
+                            </div>
+                        </div>
+                        <div class="sorting__sorter">
+                            <p class="sorting__sorter-text">
+                                category:
+                            </p>
+                            <div class="disclosure">
+                                <div class="disclosure__block">
+                                    <span class="disclosure__option--current pagination__option--current">products</span>
+                                    <img loading="lazy" src="./assets/img/arrow_down.svg" alt="arrow down">
+                                </div>
+                                <ul class="disclosure__list">
+                                    <li class="disclosure__list-item pagination__option">
+                                        <span class="disclosure__option">
+                                            products
+                                        </span>
+                                    </li>
+                                    <li class="disclosure__list-item pagination__option">
+                                        <span class="disclosure__option">
+                                            on sale
+                                        </span>
+                                    </li>
+                                </ul>
+                                <input type="text" class="disclosure__input ">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="pads col-6">
+                <div class="pads col-lg-4 col-md-12 mt-md-2 d-flex align-items-md-end">
                     <div class="pads__wrapper">
-                        <div class="pads__item">
+                        <div class="pads__item" id="tilesByTwo">
                             <img src="./assets/img/icon/2x2.svg" alt="2x2 pic">
                         </div>
-                        <div class="pads__item">
+                        <div class="pads__item" id="tilesByThree">
                             <img src="./assets/img/icon/3x3.svg" alt="3x3 pic">
                         </div>
                     </div>
@@ -421,75 +474,75 @@
                                 <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                             </li>
                             <li class="main-menu__submenu-item">
-                                <a href="/blog">Shop beauty</a>
+                                <a href="/blog-en.html">Shop beauty</a>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <a href="/blog-en.html">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                 <ul class="main-menu__submenu main-menu__submenu-2">
                                     <li class="main-menu__submenu-item">
                                         <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                                     </li>
                                     <li class="main-menu__submenu-item">
-                                        <a href="/blog">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                        <a href="/blog-en.html">Shop by type <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Shop All</a>
+                                        <a href="/blog-en.html">Shop All</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Skin Care</a>
+                                        <a href="/blog-en.html">Skin Care</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Make up</a>
+                                        <a href="/blog-en.html">Make up</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Hair care</a>
+                                        <a href="/blog-en.html">Hair care</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog">Shop the edit <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <a href="/blog-en.html">Shop the edit <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                 <ul class="main-menu__submenu main-menu__submenu-2">
                                     <li class="main-menu__submenu-item">
                                         <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                                     </li>
                                     <li class="main-menu__submenu-item">
-                                        <a href="/blog">Shop the edit</a>
+                                        <a href="/blog-en.html">Shop the edit</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Shop All</a>
+                                        <a href="/blog-en.html">Shop All</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Skin Care</a>
+                                        <a href="/blog-en.html">Skin Care</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Make up</a>
+                                        <a href="/blog-en.html">Make up</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog">Sale <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
+                                <a href="/blog-en.html">Sale <img src="./assets/img/icon/chevron-right.svg" alt="chevron right"></a>
                                 <ul class="main-menu__submenu main-menu__submenu-2">
                                     <li class="main-menu__submenu-item">
                                         <a href="">back<img class="main-menu__chevron-left" src="./assets/img/icon/chevron-right.svg" alt="chevron left"></a>
                                     </li>
                                     <li class="main-menu__submenu-item">
-                                        <a href="/blog">Final reductions</a>
+                                        <a href="/blog-en.html">Final reductions</a>
                                     </li>
                                     <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                        <a href="/blog">Fragrance sale</a>
+                                        <a href="/blog-en.html">Fragrance sale</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog">our pics</a>
+                                <a href="/blog-en.html">our pics</a>
                             </li>
                             <li class="main-menu__submenu-item main-menu__submenu-item--inside">
-                                <a href="/blog">gift cards</a>
+                                <a href="/blog-en.html">gift cards</a>
                             </li>
                         </ul>
                     </li>
                     <li class="main-menu__list-item">
-                        <a href="/blog">Blog</a>
+                        <a href="/blog-en.html">Blog</a>
                     </li>
                     <li class="main-menu__list-item">
                         <a href="/about">about</a>

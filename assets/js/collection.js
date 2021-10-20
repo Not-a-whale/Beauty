@@ -5,6 +5,8 @@ let dataCollection;
 const paginator = $("#paginatorDropdown");
 let container = $(".productsContainer");
 
+$("#tilesByThree").addClass("pad-right-active");
+
 $.ajax({
   url: "assets/json/items.json",
   type: "GET",
@@ -237,4 +239,40 @@ $(".prev__list-item").on("click", function (e) {
   if ($(".pages__list-item")[+getCurrentPagination()[0].innerHTML - 5]) {
     $($(".pages__list-item")[+getCurrentPagination()[0].innerHTML - 5]).show();
   }
+});
+
+/* Tiles switching */
+
+$("#tilesByTwo").on("click", function () {
+  $("#tilesByThree").removeClass("pad-right-active");
+  $("#tilesByTwo").addClass("pad-left-active");
+  Array.from($("#overallContainer .carousel__item")).forEach((item) => {
+    if ($(item).hasClass("product-banner")) {
+      item.classList.remove("col-lg-3");
+      item.classList.remove("col-lg-5");
+      item.classList.add("col-lg-7");
+    } else {
+      console.log($(item).hasClass("product-banner"));
+      item.classList.remove("col-lg-3");
+      item.classList.add("col-lg-5");
+    }
+  });
+});
+
+$("#tilesByThree").on("click", function () {
+  $("#tilesByTwo").removeClass("pad-left-active");
+  $("#tilesByThree").addClass("pad-right-active");
+  Array.from($("#overallContainer .carousel__item")).forEach((item) => {
+    if ($(item).hasClass("product-banner")) {
+      item.classList.remove("col-lg-5");
+      item.classList.remove("col-lg-7");
+      item.classList.add("col-lg-3");
+    } else {
+      console.log($(item).hasClass("product-banner"));
+      item.classList.remove("col-lg-3");
+      item.classList.add("col-lg-5");
+    }
+    item.classList.remove("col-lg-5");
+    item.classList.add("col-lg-3");
+  });
 });
